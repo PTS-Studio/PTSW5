@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/home/1_titul_block.css">
+        <link rel="stylesheet" href="style/home/2_designer_block.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/text.css">
+        <link rel="stylesheet" href="js/home.js">
+        <title>Главная</title>
+    </head>
+    <body>
+        <header>
+            <div class="block-max-width">
+                <div class="header_block">
+                    <div class="null_block">
+                        <div class="hd_link" style="border-radius: 10px 0 0 10px;">
+                            <div class="hd_link_content">
+                                <img src="images/HeaderMenu/logotip2.svg" alt="logotip" class="logotip-pts">
+                                <h1 style="font-size: 16px; flex-direction: column;">PTS-STUDIO</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="null_block">
+                        <div class="hd_link" style="gap: 0; border-left: 1px solid #2d2d2d;">
+                            <div class="hd_link_content">
+                                <div class="dropdown-section">
+                                    <li>
+                                        <a href="home.html" class="active-btn">Главная</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hd_link">
+                            <div class="hd_link_content">
+                                <div class="dropdown-section">
+                                    <li>
+                                        <a href="works.html" class="sleep-btn">Работы и проекты</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hd_link">
+                            <div class="hd_link_content">
+                                <div class="dropdown-section">
+                                    <li>
+                                        <a href="#" class="sleep-btn">Контакты</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hd_link" style="border-right: none; border-radius: 0 10px 10px 0;">
+                            <div class="hd_link_content">
+                                <div class="dropdown-section">
+                                    <li>
+                                        <a href="#" class="sleep-btn">Новости</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_block_mobile">
+                    <div class="null_block" style="justify-content: space-between; gap: 10px;">
+                        <div class="hd_link" style="border-radius: 10px 0 0 10px;">
+                            <div class="hd_link_content">
+                                <img src="images/HeaderMenu/logotip2.svg" alt="logotip" class="logotip-pts">
+                                <h1 style="font-size: 16px; flex-direction: column;">PTS-STUDIO</h1>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="check" class="burger-checkbox">
+                        <label for="check" class="burger"></label>
+                        <ul class="dropdown-section-mobile">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Мои работы</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse aut ipsa consequuntur cupiditate odit ab facilis totam eligendi aspernatur, temporibus neque dolorem omnis dignissimos eum reiciendis et quidem libero ullam.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <div class="center_block">
+                <div class="titul_block">
+                    <div class="sector_block_left">
+                        <h1 class="FIO">Путилин Андрей Андреевич</h1>
+                        <h2 class="TPEK">Студент ГБПОУ ТПЭК</h2>
+                        <p class="text_p2">Приветствую Вас на моем сайте! Здесь вы найдете интересные статьи, полезные ресурсы и многое другое. Буду рад видеть вас среди посетителей и надеюсь.</p>
+                        <div class="two-button">
+                            <div class="button1">Мои работы</div>
+                            <div class="button2">Контакты</div>
+                        </div>
+                    </div>
+                    <div class="sector_block_right">
+                        <div class="code-block">
+<pre><code>function Developer {
+    this.name = "Alex";
+    this.skills = ["JavaScript", "HTML", "CSS", 
+                  "React", "Node.js"];
+    this.passion = "Building amazing web experiences";
+                
+    this.code = function() {
+        return "Clean, efficient solutions";
+    }
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="titul_block_mobile">
+                    <div class="sector_block_left_mobile">
+                        <h1 class="FIO">Путилин Андрей Андреевич</h1>
+                        <h2 class="TPEK">Студент ГБПОУ ТПЭК</h2>
+                        <p class="text_p2">Приветствую Вас на моем сайте! Здесь вы найдете интересные статьи, полезные ресурсы и многое другое. Буду рад видеть вас среди посетителей и надеюсь, что информация, которую вы найдете здесь, будет полезной и интересной для вас.</p>
+                    </div>
+                    <div class="sector_block_right_mobile">
+                        <div class="two-button_mobile">
+                            <div class="button1_MOBILE">GitHub</div>
+                            <div class="button2_MOBILE">RuTube</div>
+                            <div class="button2_MOBILE">ВКонтакте</div>
+                            <div class="button2_MOBILE">Мои работы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="designer_block">
+                    <div class="stages_block">
+                        <div class="two-text">
+                            <h1 class="text-h32">Как устроена моя работа Web-разработчика</h1>
+                            <p class="text-p16">Веб-разработка — это не просто сфера, а настоящее искусство, позволяющее создавать уникальные дизайны для сайтов</p>
+                        </div>
+                        
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">1-й этап:</h1>
+                                <h1 class="text-h20">Определение цели и концепции сайта</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 5px;"></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">На этом начальном этапе мы формулируем основную концепцию сайта, его уникальные механики и визуальную составляющую. Необходимо понять, какую проблему он будет решать, какую аудиторию привлекать и какие задачи выполнять.</p>
+                                <button id="myBtn">Подробнее</button>
+                            </div>
+                        </div>
+                        
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">2-й этап:</h1>
+                                <h1 class="text-h20">Создание макета сайта</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 10px;"></div></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">На этапе проектирования макета разрабатывается структура сайта и его содержание. Определяются основные разделы и их наполнение. Создаются карты сайта и сценарии пользовательского взаимодействия, чтобы представить, как будут двигаться посетители по ресурсу.</p>
+                                <a href="#" class="stage_button">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">3-й этап:</h1>
+                                <h1 class="text-h20">Верстка сайта</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 10px;"></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">На этом этапе дизайнерские макеты преобразуются в функциональные страницы с использованием HTML, CSS и JavaScript. Происходит создание адаптивного дизайна, который будет одинаково хорошо отображаться на различных устройствах — от мобильных телефонов до настольных компьютеров.</p>
+                                <a href="#" class="stage_button">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">4-й этап:</h1>
+                                <h1 class="text-h20">Тестирование и оптимизация</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 10px;"></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">После завершения верстки начинается процесс тестирования, направленный на выявление ошибок и недочетов в работе сайта. Проверяются все аспекты, включая ссылки, скорость загрузки и производительность сайта</p>
+                                <a href="#" class="stage_button">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">5-й этап:</h1>
+                                <h1 class="text-h20">Шифрование данных</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 10px;"></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">Для защиты интеллектуальной собственности и предотвращения несанкционированного копирования кода применяются методы шифрования и обфускации. Это не только помогает сохранить уникальность сайта, но и снижает риски его копирования</p>
+                                <a href="#" class="stage_button">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="stage">
+                            <div class="stage_column_left">
+                                <h1 class="text-h20">6-й этап:</h1>
+                                <h1 class="text-h20">Запуск сайта и его обновления</h2>
+                            </div>
+                            <div class="stage_column_center">
+                                <div class="block_cube"><img src="images/photo.png" alt="" style="width: 100%; height: auto; border-radius: 10px;"></div>
+                            </div>
+                            <div class="stage_column_right">
+                                <p class="text_p">Запуск сайта — это важный этап, когда готовый проект становится доступным для пользователей. Происходит публикация сайта на сервере и проведение финальных проверок. В результате работы сайта проводятся различные обновления, чтобы сайт развивался по современным технологиям.</p>
+                                <a href="#" class="stage_button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--<div class="center_block">
+                <div class="skill_block" >
+                    <div class="two-text">
+                        <h1 class="text-h32">Сферы разработки, которыми я занимаюсь</h1>                        
+                        <p class="text-p16">Веб-дизайн — это не просто профессия, а настоящее искусство, позволяющее создавать уникальные digital-пространства</p>
+                    </div>
+                    <div class="skill_sector">
+                        <div class="skill_block_left">
+                            <div class="skill_window">
+                                <h1 class="text-h20" style="margin-bottom: 25px; width: 100%;">Web-разработка</h1>
+                                <p class="text_p">Я занимаюсь разработкой сайтов и веб-приложений, обеспечивая их самыми важными функциями и удобствами для использования. В своей работе я опираюсь на адаптивный дизайн и оптимизацию сайта, чтобы каждый смог без труда просматривать интернет-ресурсы, не боясь просадку производительности на сайте.</p>
+                            </div>
+                        </div>
+                        <div class="skill_block_right">
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-1" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-1" class="toggler__label">
+                                    <p class="height-max">Стек технологий</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box" style="width: 100%; padding: 0;">
+                                    <div class="languages_programming" style="background: #252525; border-radius: 10px 10px 0 0;">
+                                        <p class="text-p16" style="width: 100%; padding: 5px 20px 5px 20px;">HTML</p>
+                                    </div>
+                                    <div class="languages_programming" style="background: #202020;">
+                                        <p class="text-p16" style="width: 100%; padding: 5px 20px 5px 20px;">CSS</p>
+                                    </div>
+                                    <div class="languages_programming" style="background: #252525;">
+                                        <p class="text-p16" style="width: 100%; padding: 5px 20px 5px 20px;">PHP</p>
+                                    </div>
+                                    <div class="languages_programming" style="background: #202020; border-radius: 0 0 10px 10px;">
+                                        <p class="text-p16" style="width: 100%; padding: 5px 20px 5px 20px;">JavaScript</p>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-1-2" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-1-2" class="toggler__label">
+                                    <p class="height-max">Документация</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_sector">
+                        <div class="skill_block_left">
+                            <div class="skill_window">
+                                <h1 class="text-h20" style="margin-bottom: 25px; width: 100%;">Python-разработка</h1>
+                                <p class="text_p">Python – универсальный язык программирования для решения различных задач. Он помогает мне эффективно создавать программы, обеспечивая высокую скорость разработки продукта за короткое время. С его помощью можно создавать не только сайты, но и программы, игры, телеграмм-ботов и многое другое.</p>
+                            </div>
+                        </div>
+                        <div class="skill_block_right">
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-2" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-2" class="toggler__label">
+                                    <p class="height-max">Web-разработка</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                                    <div class="languages_programming">
+                                        <p class="text-p16" style="width: 100%;">Стек технологий:</p>
+                                        <div class="lang_prog">HTML</div>
+                                        <div class="lang_prog">CSS</div>
+                                        <div class="lang_prog">JS</div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-2-1" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-2-1" class="toggler__label">
+                                    <p class="height-max">Статистика</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_sector">
+                        <div class="skill_block_left">
+                            <div class="skill_window">
+                                <h1 class="text-h20" style="margin-bottom: 25px; width: 100%;">CPP-разработка</h1>
+                                <p class="text_p">CPP-разработка дает возможность создавать высокопроизводительные приложения, которые эффективно работают в условиях ограниченных ресурсов. Хотя этот язык намного труднее остальных он остается ключевым в разработке большинства проектов.</p>
+                            </div>
+                        </div>
+                        <div class="skill_block_right">
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-3" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-3" class="toggler__label">
+                                    <p class="height-max">Web-разработка</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                                    <div class="languages_programming">
+                                        <p class="text-p16" style="width: 100%;">Стек технологий:</p>
+                                        <div class="lang_prog">HTML</div>
+                                        <div class="lang_prog">CSS</div>
+                                        <div class="lang_prog">JS</div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-3-1" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-3-1" class="toggler__label">
+                                    <p class="height-max">Статистика</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_sector">
+                        <div class="skill_block_left">
+                            <div class="skill_window">
+                                <h1 class="text-h20" style="margin-bottom: 25px; width: 100%;">Разработка БД</h1>
+                                <p class="text_p">Работа с SQL позволяет мне эффективно управлять данными, обеспечивая их хранение, извлечение и манипуляцию для поддержки различных приложений. На данный момент я только изучаю SQL, но уже могу создавать базы данных, вставлять в них данные, а также изменять их при помощи окна ввода на Python</p>
+                            </div>
+                        </div>
+                        <div class="skill_block_right">
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-4" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-4" class="toggler__label">
+                                    <p class="height-max">Web-разработка</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                                    <div class="languages_programming">
+                                        <p class="text-p16" style="width: 100%;">Стек технологий:</p>
+                                        <div class="lang_prog">HTML</div>
+                                        <div class="lang_prog">CSS</div>
+                                        <div class="lang_prog">JS</div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="toggler">
+                                <input type="checkbox" id="toggler__checkbox-id-4-1" class="toggler__checkbox">
+                                <label for="toggler__checkbox-id-4-1" class="toggler__label">
+                                    <p class="height-max">Статистика</p>
+                                    <div class="button_list">
+                                        <img src="images/strelka5.svg" alt="" class="icon85">
+                                    </div>
+                                </label>
+                                <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="project_block">
+                    <div class="two-text" style="margin-bottom: 40px;">
+                        <h1 class="text-h32">Проектная деятельность</h1>
+                        <p class="text-p16">Веб-дизайн — это не просто профессия, а настоящее искусство, позволяющее создавать уникальные digital-пространства</p>
+                    </div>
+                    <div class="two-project">
+                        <div class="project_block_left">
+                            <h1 class="text-h20" style="width: 100%;">Участие в проекте КОД БУДУЩЕГО</h1>
+                            <p class="text_p2">Дата: 12.11.2023</p>
+                            <p class="text_p" style="margin-top: 20px;">В рамках федерального проекта «Развитие кадрового потенциала ИТ-отрасли» национальной программы «Цифровая экономика Российской Федерации» я принял участие в интересном проекте по программированию на Python, целью которого стало изучение таких технологий как: Tkinter, Telebot и PyGame, включая работу с библиотеками и инструментами, такими как NumPy и Pandas.</p>
+                            <p class="text_p" style="margin-top: 10px;">В процессе работы я научился создавать Телеграмм ботов при помощи библиотеки Telebot, проектировать 2D игры на Pygame, оформлять программы по работе с данными и их визуализации при помощи графиков и таблиц. </p>
+                        </div>
+                        <div class="project_block_right">
+                            <div class="photo_block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="education_block">
+                    <div class="two-text" style="width: 100%; margin-bottom: 40px;">
+                        <h1 class="text-h32">Образование</h1>
+                        <p class="text-p16">Веб-дизайн — это не просто профессия, а настоящее искусство, позволяющее создавать уникальные digital-пространства</p>
+                    </div>
+                    <div class="two-project">
+                        <div class="sector_block_left2">
+                            <div class="text_h1"><p>Тверской Промышленно-Экономический Колледж</p></div>
+                            <p class="text_p">Тверской промышленно-экономический колледж (ТПЭК) основан в марте 1920 года как Тверской текстильный техникум. В 20-е годы он готовил специалистов-инженеров с высшим образованием. 13 апреля 1995 года техникум был переименован в промышленно-экономический техникум. С 2004 года он стал колледжем.</p>
+                            <p class="text_p">Сегодня колледж — это многопрофильное и многоуровневое учебное заведение, которое готовит дизайнеров, модельеров-конструкторов, бухгалтеров, техников по защите информации, техников-программистов и других специалистов. </p>
+                        </div>
+                        <div class="sector_block_right2">
+                            <img src="images/EducatiomBlock/XXL_height.png" alt="" class="icon--avatar2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="contacts_block">
+                    <div class="two-text" style="width: 100%; margin-bottom: 40px;">
+                        <h1 class="text-h32">Хотите связаться со мной или задать вопрос?</h1>
+                    </div>
+                    <div class="two-project">
+                        <div class="github_form">
+                            <div class="git_block">
+                                <img src="images/HeaderMenu/work_github.svg" alt="" class="img_git">
+                                <p class="text-p16" style="width: 85%; text-align: left;">GitHub - лучшая платформа, в которой вы можете просматривать мои работы и проекты, а так же следить за результатами и новыми идеями.</p>
+                            </div>
+                            <div class="git_block">
+                                <img src="images/HeaderMenu/work_github.svg" alt="" class="img_git">
+                                <p class="text-p16" style="width: 85%; text-align: left;">GigaCode - лучшая платформа, в которой вы можете просматривать мои работы и проекты, а так же следить за результатами и новыми идеями.</p>
+                            </div>
+                        </div> 
+                        <div class="contact_form">
+                            <p class="text-number">01</p>
+                            <div class="text-block">
+                                <p class="text-h20" style="width: 100%;">Оставьте заявку вашего обращения</p>
+                                <p class="text_p" style="margin-top: 15px;">Для связи со мной оставьте заявку, выбрав подходящий для вас вариант проблемы. Заполните основные поля, чтобы я смог оперативно ответить на ваш запрос.</p>
+                                <p class="text-p-contacts" style="color: rgb(42, 118, 165); margin-top: 10px;">Важно, опрос проводится анонимно, незатрагивая личных данных пользователя</p>
+                            </div>
+                            <p class="text-number">02</p>
+                            <div class="text-block">
+                                <p class="text-h20" style="width: 100%;">Ожидайте нашего ответа</p>
+                                <p class="text_p" style="margin-top: 15px;">В течении некоторого времени я обязательно отвечу на ваш вопрос.</p>
+                            </div>
+                            <div class="button-contacts">
+                                <p style="color: black;">Оставить заявку</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center_block">
+                <div class="quest_block">
+                    <div class="toggler">
+                        <input type="checkbox" id="toggler__checkbox-id2-1-1" class="toggler__checkbox">
+                        <label for="toggler__checkbox-id2-1-1" class="toggler__label">
+                            <p class="height-max">Статистика</p>
+                            <div class="button_list">
+                                <img src="images/strelka5.svg" alt="" class="icon85">
+                            </div>
+                        </label>
+                        <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.</span>
+                    </div>
+                    <div class="toggler">
+                        <input type="checkbox" id="toggler__checkbox-id2-2-1" class="toggler__checkbox">
+                        <label for="toggler__checkbox-id2-2-1" class="toggler__label">
+                            <p class="height-max">Статистика</p>
+                            <div class="button_list">
+                                <img src="images/strelka5.svg" alt="" class="icon85">
+                            </div>
+                        </label>
+                        <span class="toggler__content-box">Я занимаюсь веб-разработкой с 2023 года, за время обучения мне удалось приобрести навыки в веб-дизайне и верстке макетов с использованием HTML и CSS.
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <footer>
+            <div class="center_block" style="background: #181818; box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);">
+                <div class="ft-main">
+                    <p class="text_p" style="text-align: center;">Copyright © 2024-2025 Андрей. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

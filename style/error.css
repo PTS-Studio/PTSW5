@@ -1,0 +1,55 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: white;
+  }
+body {
+    background: #121212;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    width: 800px; /* фиксированная ширина контента */
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.content p {
+  margin-top: 40px;
+}
+.two_button {
+    display: flex;
+    gap: 30px;
+}
+  .button1 {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+    background: #8000e4;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+  .button2 {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    background: #181818;
+    border: 1px solid #a5a5a5;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.button1:hover {
+  transform: scale(1.1);
+}
+.button2:hover {
+  transform: scale(1.1);
+}

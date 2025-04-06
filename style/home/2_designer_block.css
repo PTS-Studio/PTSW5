@@ -1,0 +1,97 @@
+/*
+=============================================================
+    2_designer_block --> home.html
+
+=============================================================
+    Автор: Путилин А.
+    ДатаР: 29.03.2025
+=============================================================
+*/
+
+.text-h20 {
+    font-size: 20px;
+    width: 200px;
+}
+.text-h32 {
+    width: 40%;
+    text-align: left;
+}
+.text-p16 {
+    width: 36%;
+}
+.text_p {
+    display: flex;
+    cursor: default;
+    font-family: Consolas,monaco,monospace;
+}
+
+/* 
+=============================================================
+    БЛОК ДИЗАЙНЕРА
+============================================================= 
+*/
+.designer_block {
+    width: 1080px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 0 0 100px 0;
+    gap: 20px;
+}
+.stages_block {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.two-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.stage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background: #161616;
+    border-top: 1px solid #e2e8f0;
+    /* box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5); */
+    padding: 45px 25px;
+    gap: 50px;
+    border-radius: 5px;
+}
+.stage_column_left {
+    display: flex;
+    flex-direction: column;
+    flex: 1px 1 100px;
+    line-height: 26px;
+}
+.stage_column_center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    flex: 1 1 220px;
+}
+.stage_column_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 220px;
+    gap: 30px;
+}
+.block_cube {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1080px) {
+.designer_block {
+    margin: 80px 110px 80px 110px;
+}
+}
