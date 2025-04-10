@@ -274,14 +274,45 @@ html {
   list-style: none;
   width: 100%;
   top: 100px;
+  padding: 20px 28px 36px 28px;
+  border: 1px solid #2d2d2d;
   animation: anim2 0.3s forwards;
-  background: white;
+  background: #161616;
   border-radius: 10px 10px 0 0;
   overflow-y: auto;
   overflow: auto;
+  justify-content: space-between;
+}
+.dropdown-section-mobile-content {
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+.link-setting {
+  flex: 1 1 220px;
+  border-bottom: 1px solid #2d2d2d;
+}
+.section-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 220px;
+}
+.link-mobile {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  color: white;
+  line-height: 1.5rem;
+}
+.link-mobile:hover {
+  background: #1b1b1b;
+  border-radius: 8px;
 }
 @keyframes anim2 {
-  0% {transform: translateY(50%);}
+  0% {transform: translateY(100%);}
   100% {transform: translateY(0);}
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -302,7 +333,6 @@ ul li a {
   background: transparent;
   width: 30px;
   height: 26px;
-  border-left: 1px solid #2d2d2d;
 }
 .burger::before,
 .burger::after {
@@ -349,5 +379,10 @@ input[type="checkbox"] {
   }
   .header_block_mobile {
     display: block;
+  }
+}
+@media (max-width: 280px) {
+  .hd_link_content p {
+    display: none;
   }
 }
