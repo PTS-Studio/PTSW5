@@ -1,3 +1,12 @@
+/*
+=============================================================
+    header.css --> home.html --> home.js
+    header.css <-> home.js
+=============================================================
+    Автор: Путилин А.
+    ДатаР: 13.04.2025
+=============================================================
+*/
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +17,10 @@
   text-decoration: none;
   list-style: none;
   font-family: Consolas,monaco,monospace;
+  scrollbar-color: #494949 #121212;
+  scrollbar-width: thin;
 }
-html {
+html, body {
   height: 100vh;
   width: 100%;
 }
@@ -18,8 +29,11 @@ html {
   justify-content: center;
   z-index: 0;
 }
-
-/*___________________________________ШАПКА САЙТА______________________________________________*/
+/*
+=============================================================
+  ШАПКА САЙТА (PC)
+=============================================================
+*/
 .block-max-width {
   width: 100%;
   justify-content: center;
@@ -253,7 +267,11 @@ html {
   height: 35px;
 }
 
-/*____________________________МОБИЛЬНАЯ ШАПКА САЙТА___________________________________________*/
+/*
+=============================================================
+  ШАПКА САЙТА (MOBILE)
+=============================================================
+*/
 .header_block_mobile {
   flex-wrap: wrap;
   display: none;
@@ -275,21 +293,29 @@ html {
   padding: 4px 12px;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
-  border: 1px solid white;
-  color: black;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
   margin-bottom: 20px;
   margin-top: 50px;
+  transition: 0.2s;
+}
+.button10:hover {
+  background: rgb(234, 233, 233);
 }
 .dropdown-section-mobile {
+  position: absolute;
   justify-content: space-between;
+  flex-direction: column;
   position: relative;
   background: #161616;
   display: none;
   list-style: none;
-  height: 90vh;
+  height: 90dvh;
   width: 100%;
-  padding: 20px 28px 36px 28px;
+  padding: 20px 14px 36px 14px;
   border: 1px solid #2d2d2d;
   animation: anim2 0.3s forwards;
   border-radius: 10px 10px 0 0;
@@ -300,6 +326,7 @@ html {
   flex-wrap: wrap;
   align-content: space-between;
   overflow: auto;
+  scrollbar-color: black;
   flex-direction: column; /* Обновлено для вертикального расположения элементов */
 }
 .strelka {
@@ -385,6 +412,7 @@ ul li a {
 }
 #check:checked ~ .dropdown-section-mobile {
   display: block;
+  width: 100%;
 }
 input[type="checkbox"] {
   display: none;
