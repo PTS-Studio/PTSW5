@@ -8,13 +8,21 @@
 =============================================================
 */
 
-.text-h20 {
+/* .text-h20 {
     font-size: 20px;
     width: 200px;
 }
 .text-h32 {
-    width: 40%;
+    width: 100%;
     text-align: left;
+    padding: 5px;
+
+    color: white;
+}
+.white_line {
+    margin: 50px 0 0px 0;
+    width: 100%;
+    height: auto;
 }
 .text-p16 {
     font-size: 16px;
@@ -23,11 +31,10 @@
 .text_p {
     display: flex;
     cursor: default;
-    font-family: Consolas,monaco,monospace;
 }
 .text16 {
     font-size: 16px;
-}
+} */
 
 /* 
 =============================================================
@@ -35,17 +42,15 @@
 ============================================================= 
 */
 .designer_block {
-    width: 1080px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
-    margin: 0 0 100px 0;
+    margin: 20px 0 0 0;
     gap: 20px;
 }
 .stages_block {
     width: 100%;
-    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -62,12 +67,11 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    background: #161616;
-    border-top: 1px solid #e2e8f0;
-    /* box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5); */
-    padding: 45px 25px;
+    /* background: #161616;
+    border: 1px solid #2d2d2d; */
+    padding: 30px 25px;
     gap: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .stage_column_left {
     display: flex;
@@ -79,8 +83,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: right;
-    flex: 1 1 220px;
+    justify-content: center;
+    flex: 1 1 100px;
 }
 .stage_column_right {
     display: flex;
@@ -90,12 +94,6 @@
     gap: 30px;
 }
 .block_cube {
-    width: 100%;
+    width: 300px;
     height: auto;
-}
-
-@media (max-width: 1080px) {
-.designer_block {
-    margin: 80px 110px 80px 110px;
-}
 }

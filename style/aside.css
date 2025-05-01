@@ -1,0 +1,61 @@
+.aside_main {
+    display: flex;
+    width: 1280px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    gap: 20px;
+}
+main {
+    width: 100%;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    background: #161616;
+}
+.aside_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 100%;
+    gap: 20px;
+}
+.aside_sector {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2d2d2d;
+    background: #161616;
+    transition: 0.2s;
+    box-shadow: 0 5px 8px rgb(0, 0, 0, 0.2);
+}
+.aside_sector:hover {
+    background: #1b1b1b;
+}
+.colorF {
+    color: black;
+    background: white;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.textp {
+    margin-top: 5px;
+}
+.list-style {
+    list-style: inside;
+    font-size: 15px;
+    list-style-type: square;
+}
+.textp-top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.textp-top:hover .textp{
+    color: #e1e1e1;
+}
+.news-link {
+    margin-top: 10px; 
+    font-size: 15px;
+}

@@ -1,4 +1,4 @@
-const burgerCheckbox = document.getElementById('check');
+const burgerCheckbox = document.getElementById('FK_menu');
 const menuOverlay = document.querySelector('.menu-overlay');
 
 burgerCheckbox.addEventListener('change', function() {
