@@ -1,13 +1,18 @@
 const burgerCheckbox = document.getElementById('FK_menu');
 const menuOverlay = document.querySelector('.menu-overlay');
+const mainBlock = document.querySelector('main');
 
 burgerCheckbox.addEventListener('change', function() {
   if (this.checked) {
       // Отключаем прокрутку
       document.body.style.overflow = 'hidden';
+      // Скрываем основной блок с анимацией
+      mainBlock.classList.add('hidden');
   } else {
       // Возвращаем прокрутку
       document.body.style.overflow = 'auto';
+      // Показываем основной блок с анимацией
+      mainBlock.classList.remove('hidden');
   }
 });
 

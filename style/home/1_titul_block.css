@@ -210,6 +210,7 @@
     justify-content: center;
     transition: 0.2s;
     flex: 1 1 220px;
+    cursor: pointer;
 }
 .titul_link:hover {
     background: #1b1b1b;
@@ -315,6 +316,17 @@
 =============================================================
 */
 @media (max-width: 1080px) {
+    .avatar {
+        top: 25px;
+        margin: 0 auto;
+        display: none;
+    }
+    .header_titul_block_left {
+        display: none;
+    }
+    .header_titul_block_right {
+        width: 100%;
+    }
     .sector_block_left {
         width: 100%;
     }
