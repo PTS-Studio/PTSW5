@@ -104,9 +104,9 @@
     width: 42%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 50px 0px 0px 0px;
     border-left: 1px solid #363636;
-    gap: 20px;
     border-radius: 0 0 10px 0;
 }
 .button_titul {
@@ -314,3 +314,18 @@
     Медиа запросы
 =============================================================
 */
+@media (max-width: 1080px) {
+    .sector_block_left {
+        width: 100%;
+    }
+    .sector_block_right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 970px) {
+    aside {
+        display: none;
+    }
+    
+}

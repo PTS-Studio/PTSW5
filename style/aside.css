@@ -60,3 +60,8 @@ main {
     margin-top: 10px; 
     font-size: 15px;
 }
+@media (max-width: 850px) {
+    .aside_main {
+        margin: 70px 10px 0 10px;
+    }
+  }

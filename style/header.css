@@ -275,6 +275,9 @@ input[type="checkbox"] {
   .header_block_mobile {
     display: block;
   }
+  .absorbing_block {
+    margin: 0 10px 0 10px;
+  }
 }
 @media (max-width: 280px) {
   .hd_link_content p {
