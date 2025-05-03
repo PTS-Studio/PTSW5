@@ -332,6 +332,7 @@
     }
     .sector_block_right {
         width: 100%;
+        border-left: none;
     }
 }
 

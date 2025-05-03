@@ -46,6 +46,7 @@ main.hidden {
 }
 .textp {
     margin-top: 5px;
+    color: rgb(215, 215, 215);
 }
 .list-style {
     list-style: inside;

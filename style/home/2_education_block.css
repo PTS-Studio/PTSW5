@@ -12,3 +12,62 @@
     border-bottom: 1px solid #363636;
     padding: 10px 20px 10px 20px;
 }
+.toggler {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #363636;
+    z-index: 1;
+  }
+  .toggler__label {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .toggler__label:hover {
+    background: #1f1f1f;
+  }
+  .toggler__label::selection {
+    color: none;
+    background: none;
+  }
+  .toggler__content-box  {
+    width: 100%;
+    border-top: 1px solid #363636;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    color: #e3e3e3;
+    font-size: 14px;
+    z-index: -1;
+  }
+  .toggler__checkbox {
+    display: none;
+  }
+  .toggler__checkbox:checked ~ .toggler__content-box {
+    display: block;
+    display: block;
+    position: relative;
+    transition: opacity .5s linear;  
+    transform: translate(0);
+    opacity: 1;
+    font-size: 1em;
+  }
+  .toggler__label:checked ~ .icon85 {
+    display: block;
+    position: relative;
+  
+    transition: opacity .5s linear;  
+    transform:rotate(180deg);
+    opacity: 1;
+  }
+  .icon85 {
+    width: 10px;
+    height: auto;
+  }
