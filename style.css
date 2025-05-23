@@ -1,0 +1,10 @@
+.noise::before {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.45;
+    z-index: 10000;
+    pointer-events: none;
+    background: url(6674f0cdb5b7b401612cf065_noise-50.avif) repeat;
+}

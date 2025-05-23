@@ -5,14 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/header.css">
         <link rel="stylesheet" href="style/aside.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style/home/1_titul_block.css">
         <link rel="stylesheet" href="style/home/2_education_block.css">
         <link rel="stylesheet" href="style/home/4_quize_block.css">
+        <link rel="stylesheet" href="style/home/5_project.css">
         <link rel="stylesheet" href="style/blockA.css">
         <link rel="stylesheet" href="js/home.js">
         <title>Главная</title>
     </head>
     <body>
+        <div class="noise">
         <header>
             <div class="absorbing_block">
                 <div class="header_block">
@@ -79,25 +82,25 @@
                                     <li class="mobile_menu_content_list">
                                         <a href="#1" class="link_mobile">
                                             <p style="font-size: 18px;">Главная</p>
-                                            <img src="images/strelka5.svg" alt="" class="strelka">
+                                            <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
                                     <li class="mobile_menu_content_list">
                                         <a href="#2" class="link_mobile">
                                             <p>Мои работы</p>
-                                            <img src="images/strelka5.svg" alt="" class="strelka">
+                                            <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
                                     <li class="mobile_menu_content_list">
                                         <a href="#3" class="link_mobile">
                                             <p>Контакты</p>
-                                            <img src="images/strelka5.svg" alt="" class="strelka">
+                                            <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
                                     <li class="mobile_menu_content_list">
                                         <a href="#4" class="link_mobile">
                                             <p>Новости</p>
-                                            <img src="images/strelka5.svg" alt="" class="strelka">
+                                            <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
                                     <div class="button10" style="width: 100%;">
@@ -110,32 +113,40 @@
                 </div>
             </div>
         </header>
+        </div>
         <div class="center_block">
             <div class="aside_main">
                 <aside>
                     <div class="aside_block">
-                        <a href="#about_web" class="aside_sector">О сайте</a>
+                        <a href="#about_web" class="aside_sector_contect2" style="padding: 20px; background: #161616; border: 1px solid #363636; border-radius: 10px;">О сайте</a>
                         <div class="aside_sector">
-                            <div class="aside_sector_contect">
-                                <p style="cursor: default;">Последние события</p>
-                                <a href="#news1" class="textp-top">
-                                    <div class="colorF">16мая 2025г</div>
-                                    <p class="textp">С радостью сообщаем вам об открытии нашего нового сайта, доступного теперь для каждого пользователя.</p>
-                                </a>
+                            <div class="top" style="width: 100%;">
+                                <div class="aside_sector_contect" style="border-radius: 10px 10px 0 0;">
+                                    <img src="images/Aside/b1.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                    <a href="" style="cursor: default; margin-left: 40px;">Обо мне</a>
+                                </div>
+                                <div class="aside_sector_contect">
+                                    <img src="images/Aside/b2.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                    <a href="" style="cursor: default; margin-left: 40px;">Образовние</a>
+                                </div>
+                                <div class="aside_sector_contect">
+                                    <img src="images/Aside/b3.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                    <a href="" style="cursor: default; margin-left: 40px;">Опыт Работы</a>
+                                </div>
+                                <div class="aside_sector_contect">
+                                    <img src="images/Aside/b4.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                    <a href="" style="cursor: default; margin-left: 40px;">Вопросы</a>
+                                </div>
+                                <div class="aside_sector_contect">
+                                    <img src="images/Aside/b5.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                    <a href="" style="cursor: default; margin-left: 40px;">Настройки</a>
+                                </div>
                             </div>
-                            <div class="aside_sector_contect">
-                                <a href="#news1" class="textp-top">
-                                    <div class="colorF">23июня 2025г</div>
-                                    <p class="textp">С радостью сообщаем вам об открытии нашего нового сайта, доступного теперь для каждого пользователя.</p>
-                                </a>
+                            <div class="bottom" style="width: 100%;">
+                                <div class="aside_sector_contect" style="border-bottom: none; border-radius: 0 0 10px 10px; border-top: 1px solid #363636;">
+                                    <p href="" style="cursor: default; color: white; font-size: 13px;">© 2025 Путилин Андрей. Все права защищены.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="aside_sector">
-                            <p style="margin-bottom: 10px;">Доступные языки</p>
-                            <li class="list-style">Русский</li>
-                            <li class="list-style">English</li>
-                            <li class="list-style">Chinese(Taiwan)</li>
-                            <li class="list-style">Français</li>
                         </div>
                     </div>
                 </aside>
@@ -145,7 +156,7 @@
                             <div class="header_titul_block">
                                 <div class="header_titul_block_left"></div>
                                 <div class="header_titul_block_right">
-                                    <div class="titul_link">
+                                    <div class="titul_link" style="border-left: none; border-radius: 10px 0 0 0;">
                                         <p>Статьи</p>
                                     </div>
                                     <div class="titul_link">
@@ -162,7 +173,7 @@
                                 <h1>Путилин Андрей Андреевич</h1>
                                 <div class="ghf" style="margin-top: 20px;">
                                     <p style="margin-top: 20px; font-size: 20px; font-weight: 600; margin-bottom: 5px;">Обо мне:</p>
-                                    <p style="color: rgb(215, 215, 215);">Я занимаюсь разработкой программ и приложений на различные устройства, проектирую дизайн и свзываю получившийся результат при помощи баз данных SQl. В своей работе я операюсь на высокую производительность и оптимизацию своих собственных работ.</p>
+                                    <p style="color: rgb(215, 215, 215);">Я занимаюсь разработкой программ и веб-приложений с использованием технологий анализа данных, стараюсь создавать качественные и безопасные приложения, использующие систему Microsoft SQL Server, которая обеспечивает надёжность хранения и целостности больших объемов информации.</p>
                                 </div>
                                 <div class="ghf">
                                     <p style="margin-top: 20px; font-size: 20px; font-weight: 600; margin-bottom: 5px;">Специальность:</p>
@@ -174,9 +185,10 @@
                                 </div>
                                 <div class="ghf">
                                     <p style="margin-top: 20px; font-size: 20px; font-weight: 600; margin-bottom: 5px; margin-bottom: 5px;">Технологии:</p>
-                                    <div class="dr" style="width: 100%; height: auto; align-items: center; display: flex; flex-wrap: wrap; gap: 20px;">
+                                    <div class="dr" style="width: 100%; height: auto; align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
                                         <div class="button_titul">Python</div>
                                         <div class="button_titul">C++</div>
+                                        <div class="button_titul">C#</div>
                                         <div class="button_titul">SQL</div>
                                         <div class="button_titul">HTML</div>
                                         <div class="button_titul">CSS</div>
@@ -187,26 +199,26 @@
                                 <div class="pip" style="width: 100%; flex-wrap: wrap; flex-direction: column;">
                                     <h1 style="color: #d7d7d7; padding-left: 20px;">Дополнительно</h1>
                                     <div class="button_titul2" style="margin-top: 20px;">
-                                        <p style="color: rgb(215, 215, 215);">GitHub</p>
-                                        <p>Вы можете просмотреть весь исходный код на платформе GitHub, там хранятся мои работы, которые могут находиться в разработке</p>
+                                        <h3 style=" margin-bottom: 5px;">GitHub</h3>
+                                        <p style="color: rgb(215, 215, 215);">Вы можете просмотреть весь исходный код на платформе GitHub, где хранятся мои работы и проекты</p>
                                     </div>
                                     <div class="button_titul2">
-                                        <p style="color: rgb(215, 215, 215);">Rutube</p>
-                                        <p>Вы можете просмотреть весь исходный код на платформе GitHub, там хранятся мои работы, которые могут находиться в разработке</p>
+                                        <h3 style=" margin-bottom: 5px;">RuTube</h3>
+                                        <p style="color: rgb(215, 215, 215);">Видео хостиг, в котором я выкладываю отчеты о тестировании моих проектов перед их публикацией в интернет</p>
                                     </div>
                                     <div class="button_titul2">
-                                        <p style="color: rgb(215, 215, 215);">Связаться</p>
-                                        <p>Вы можете просмотреть весь исходный код на платформе GitHub, там хранятся мои работы, которые могут находиться в разработке</p>
+                                        <h3 style=" margin-bottom: 5px;">Форма связи</h3>
+                                        <p style="color: rgb(215, 215, 215);">Заполните форму обратной связи, чтобы вы смогли связаться со мной или задать интерисующий вопрос</p>
                                     </div>
                                 </div>
                             </div>
-                            <img src="images/jRZ9CWSduX.png" class="avatar" alt="">
+                            <img src="images/avatar.png" class="avatar" alt="">
                         </div>
                     </div>
-                    <!-- 4 Вариант -->
                     <div class="education_block">
-                        <div class="edu_title">
-                            <h2>Образование</h2>
+                        <div class="edu_title" style="display: flex; gap: 20px; padding: 0;">
+                            <!-- <img src="images/education-student-school-college-svgrepo-com.svg" alt="" style="width: 30px; height: auto;"> -->
+                            <h3 style="border-right: 1px solid #363636;padding-right: 20px; padding: 10px 20px;">02</h3><h3 style="align-items: center; padding: 10px 20px 10px 0;">Образование</h3>
                         </div>
                         <div class="sector_block_left" style="padding: 20px 0 0 0; flex-wrap: wrap; display: flex;">
                             <div class="dfl" style="display: flex; flex-wrap: wrap; padding: 0 0px 40px 0px;">
@@ -214,40 +226,74 @@
                                 </div>
                                 <div class="text_block" style="padding: 0 20px 0 20px; display: flex;">
                                     <div class="kia" style="align-items: center; display: flex; flex-wrap: wrap;">
-                                        <img src="images/Logo (2).png" alt="" class="df" style="width: auto; height: 40px; margin-right: 20px;">
+                                        <!-- <img src="images/Logo (2).png" alt="" class="df" style="width: auto; height: 40px; margin-right: 20px;"> -->
                                     </div>
                                     
                                     <div class="kia" style="display: flex; flex-wrap: wrap; align-items: center;">
-                                        <h2 class="sa" style="width: 100%;">ГБПОУ "Тверской промышленно-экономический колледж"</h2>
+                                        <h3 class="sa" style="width: 100%;">ГБПОУ "Тверской промышленно-экономический колледж"</h3>
                                         
                                     </div>
                                 </div>
                                 <div class="text_block" style="padding: 0 20px 0 20px;">
                                     <p class="sa" style="color: #a5a5a5; width: 100%; margin-top: 5px;">Дата окончания: 2027 год</p>
-                                    <p style="margin-top: 20px; color: rgb(215, 215, 215);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis quisquam cupiditate reiciendis labore voluptatem, magni ratione quae. Molestiae earum dolorem aliquam dicta reprehenderit perferendis ipsam veritatis optio aperiam dolore.</p>
-                                    <p style="margin-top: 10px; color: rgb(215, 215, 215);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis quisquam cupiditate reiciendis labore voluptatem, magni ratione quae. Molestiae earum dolorem aliquam dicta reprehenderit perferendis ipsam veritatis optio aperiam dolore.</p>
+                                    <p style="margin-top: 20px; color: rgb(215, 215, 215);">Я занимаюсь разработкой программ и приложений на различные устройства, проектирую дизайн и свзываю получившийся результат при помощи баз данных SQl. В своей работе я операюсь на высокую производительность и оптимизацию своих собственных работ.</p>
+                                    <!-- <p style="margin-top: 10px; color: rgb(215, 215, 215);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio porro nemo, consequuntur eligendi voluptatem ipsum nihil necessitatibus beatae consequatur, sint nam veritatis modi. Placeat, rem! Iure quod molestiae vel!</p> -->
                                 </div>
                             </div>
                         
-                            <div class="block_tt" style="width: 100%; display: flex; flex-wrap: wrap; border-top: 1px solid #363636;">
-                                <div class="sdaja" style="display: flex; flex-wrap: wrap; width: 100%;">
-                                    <div class="block1" style="display: flex; flex-wrap: wrap; width: 50%; height: 100%; justify-content: center; align-items: center; border-right: 1px solid #363636; padding: 20px;">
-                                        <p>Перейти на сайт</p>
-                                    </div>
-                                    <div class="block1" style="display: flex; flex-wrap: wrap; width: 50%; height: 100%; justify-content: center; align-items: center; padding: 20px;">
-                                        <p>На карте</p>
+                            
+                        </div>
+                        <div class="sector_block_right" style="display: flex; flex-wrap: wrap; padding: 0;">
+                            <div class="aibasc" style="display: flex; flex-wrap: wrap; width: 100%;">
+                                <div class="enjover" style="width: 100%; display: flex; flex-wrap: wrap; border-bottom: 1px solid #363636; justify-content: center; align-items: center;">
+                                    <p>Индивидуальный проект</p>
+                                </div>
+                                <div class="enjover" style="width: 100%; display: flex; flex-wrap: wrap; border-bottom: 1px solid #363636; justify-content: center; align-items: center;">
+                                    <p>Курсовая работа</p>
+                                </div>
+                                <div class="enjover" style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                                    <p>Дипломная работа</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="block_tt" style="width: 58%; display: flex; flex-wrap: wrap; border-top: 1px solid #363636;">
+                            <div class="sdaja" style="display: flex; flex-wrap: wrap; width: 100%;">
+                                <div class="block1" style="display: flex; flex-wrap: wrap; width: 50%; height: 100%; border-right: 1px solid #363636;">
+                                    <a href="#" alt="" style="width: 100%; height: 100%; padding: 20px; border-radius: 0 0 0 10px; transition: 0.2s; justify-content: center; align-items: center; display: flex; flex-wrap: wrap;" class="ahref">Перейти на сайт</a>
+                                </div>
+                                <div class="block1" style="display: flex; flex-wrap: wrap; width: 50%; height: 100%; justify-content: center; align-items: center;">
+                                    <button id="openModal" style="background: none; border-radius: none; border: none; width: 100%; height: 100%; padding: 20px;">На карте</button>
+
+                                </div>
+                                <div id="modal" class="modal">
+                                    <div class="modal-content" style="height: 800px;">
+                                        <span id="closeModal" class="close">&times;</span>
+                                        <h2>Диалоговое окно</h2>
+                                        <p>Это содержимое диалогового окна.</p>
+                                        <p>Вы можете прокручивать это окно, но не основное содержимое.</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
+                                        <p>...</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="sector_block_right" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 0; gap: 10px; padding: 20px 0 20px 0;">
-                            <img src="images/ТПЭК1.jpg" alt="" style="width: 90%; height: auto; border-radius: 8px;">
-                            <img src="images/ТПЭК20(2).jpg" alt="" style="width: 90%; height: auto; border-radius: 8px;">
-                            
+                        <div class="block_tt" style="width: 42%; display: flex; flex-wrap: wrap; border-left: 1px solid #363636; border-top: 1px solid #363636;">
+
                         </div>
                     </div>
 
-
+                    <div class="project_block">
+                        <div class="edu_title">
+                            <h2>Участие в проектах</h2>
+                        </div>
+                    </div>
 
 
                     <div class="question_block" style="background: #161616;">
@@ -262,7 +308,7 @@
                             <label for="toggler__checkbox-id-1-1" class="toggler__label">
                                 <p class="height-max">Почему я создал этот сайт?</p>
                                 <div class="button_list">
-                                    <img src="images/strelka5.svg" alt="" class="icon85">
+                                    <img src="images/strelka.svg" alt="" class="icon85">
                                 </div>
                             </label>
                             <span class="toggler__content-box">Этот сайт - мой личный хаб, где я собираю свои работы, делюсь своими знаниями и опытом в веб-дизайне, конструирую макеты из FIGMA в HTML форму.</span>
@@ -273,7 +319,7 @@
                             <label for="toggler__checkbox-id-2-2" class="toggler__label">
                                 <p class="height-max">Где размещены мои проекты?</p>
                                 <div class="button_list">
-                                    <img src="images/strelka5.svg" alt="" class="icon85">
+                                    <img src="images/strelka.svg" alt="" class="icon85">
                                 </div>
                             </label>
                             <span class="toggler__content-box">Мои проекты можно просмотреть в разделе Портфолио. Конечно, пока этот раздел только развивается и дополняется, поэтому многие из моих работ будут доступны только на GitHub</span>
@@ -284,7 +330,7 @@
                             <label for="toggler__checkbox-id-3-3" class="toggler__label">
                                 <p class="height-max">Когда сайт в последний раз обновлялся?</p>
                                 <div class="button_list">
-                                    <img src="images/strelka5.svg" alt="" class="icon85">
+                                    <img src="images/strelka.svg" alt="" class="icon85">
                                 </div>
                             </label>
                             <span class="toggler__content-box">Этот сайт создан совсем недавно и работа над ним ведется постоянно (Последнее обновление было 11.01.25). Актуальную информацию об обновлениях можно посмотреть в разделе Новости на этом сайте.</span>
@@ -295,7 +341,7 @@
                             <label for="toggler__checkbox-id-4-4" class="toggler__label">
                                 <p class="height-max">Какие планы развития у этого сайта?</p>
                                 <div class="button_list">
-                                    <img src="images/strelka5.svg" alt="" class="icon85">
+                                    <img src="images/strelka.svg" alt="" class="icon85">
                                 </div>
                             </label>
                             <span class="toggler__content-box">В процессе обучения я планирую добавлять новые проекты, развивать дизайн, разрабатывать новые блоки и анимации, а также устранять баги и проблемы производительности на сайте.</span>

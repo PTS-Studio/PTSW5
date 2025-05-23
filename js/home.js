@@ -70,3 +70,27 @@ document.addEventListener('DOMContentLoaded', function() {
     animateHero();
   }
 });
+
+const modal = document.getElementById("modal");
+const openModalButton = document.getElementById("openModal");
+const closeModalButton = document.getElementById("closeModal");
+
+// Открыть модальное окно
+openModalButton.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Отключить прокрутку основной области
+}
+
+// Закрыть модальное окно
+closeModalButton.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Включить прокрутку основной области
+}
+
+// Закрыть модальное окно при клике вне его содержимого
+// window.onclick = function(event) {
+//     if (event.target === modal) {
+//         modal.style.display = "none";
+//         document.body.style.overflow = "auto"; // Включить прокрутку основной области
+//     }
+// }

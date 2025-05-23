@@ -1,0 +1,8 @@
+.project_block {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #363636;
+    margin-bottom: 20px;
+    background: #161616;
+}
