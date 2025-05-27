@@ -210,9 +210,45 @@
     flex: 1 1 220px;
     cursor: pointer;
 }
+.titul_link2 {
+    border-left: 1px solid #363636;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    flex: 1 1 220px;
+    cursor: pointer;
+}
+.titul_link3 {
+    border-left: 1px solid #363636;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    flex: 1 1 220px;
+    cursor: pointer;
+}
 .titul_link:hover {
     background: #1b1b1b;
 }
+.titul_link2:hover {
+    background: #1b1b1b;
+}
+.titul_link3:hover {
+    background: #1b1b1b;
+}
+.block_tt2 {
+    width: 42%;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #363636;
+    border-top: 1px solid #363636;
+}
+
 /*
 =============================================================
     ДЕКОРАТИВНАЯ КОНСОЛЬ
@@ -256,6 +292,18 @@
 .code-block code {
     color: white;
 }
+.block_tt {
+    width: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #363636;
+}
+.sdaja {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 /*
 =============================================================
     Титульный блок (MOBILE)
@@ -332,6 +380,23 @@
         width: 100%;
         border-left: none;
         padding-top: 20px;
+    }
+    .titul_link2 {
+        border-radius: 10px 0 0 0;
+        border-left: none;
+    }
+    .titul_link3 {
+        border-radius: 0 10px 0 0;
+    }
+    .block_tt2 {
+        width: 1px;
+        display: none;
+    }
+    .block_tt {
+        width: 100%;
+    }
+    .sdaja {
+        width: 100%;
     }
 }
 

@@ -90,6 +90,22 @@ main.hidden {
         display: none;
     }
     main {
+        margin: 0 150px 0 150px;
+    }
+}
+@media (max-width: 900px) {
+    .aside_block {
+        display: none;
+    }
+    main {
+        margin: 0 80px 0 80px;
+    }
+}
+@media (max-width: 700px) {
+    .aside_block {
+        display: none;
+    }
+    main {
         margin: 0;
     }
 }

@@ -117,12 +117,19 @@ button #openModal:hover {
   border-radius: 0 0 0 10px;
   background: #1f1f1f;
 }
+.fj {
+  border-radius: 10px;
+  filter: brightness(50%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 @media (max-width: 1080px) {
   .df {
     display: none;
   }
-  .sa {
-    text-align: center;
+  .fj {
+    height: 150px;
   }
 }
