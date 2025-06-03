@@ -118,11 +118,27 @@ button #openModal:hover {
   background: #1f1f1f;
 }
 .fj {
-  border-radius: 10px;
-  filter: brightness(50%);
+  position: absolute;
+  filter: brightness(15%);
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+}
+.kk {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #363636;
+  /* transition: 0.2s; */
+}
+.ccs {
+  transition: 0.2s;
+}
+.kk:hover .ccs{
+  margin-left: 10px;
 }
 
 @media (max-width: 1080px) {
