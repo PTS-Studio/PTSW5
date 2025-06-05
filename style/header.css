@@ -18,12 +18,15 @@
   list-style: none;
   scrollbar-color: #494949 #121212;
   scrollbar-width: thin;
+  /* scrollbar-gutter: stable; */
 }
 body {
+  position: relative;
   background: #121212;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: visible !important; /*САМОЕ ВАЖНОЕ! ОСТАВЛЯЕТ ШАПКУ НА ОДНОМ МЕСТЕ!*/
 }
 .center_block {
   display: flex;
@@ -41,7 +44,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  z-index: 9999;
+  z-index: 2;
+  /* padding-right: 0 !important */
 }
 .absorbing_block {
   width: 1280px;
@@ -54,7 +58,6 @@ header {
   border-radius: 0 0 10px 10px;
   align-items: center;
   background: #121212;
-  z-index: 9999;
 }
 .header_block {
   width: 100%;
@@ -68,7 +71,6 @@ header {
   align-items: center;
   background: #161616;
   border: 1px solid #2d2d2d;
-  z-index: 9999;
 }
 .hd_sector {
   height: 100%;

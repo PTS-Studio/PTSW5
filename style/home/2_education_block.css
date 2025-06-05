@@ -1,17 +1,17 @@
 .education_block {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    border: 1px solid #363636;
-    background: #161616;
-    margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 1px solid #363636;
+  background: #161616;
+  margin-bottom: 20px;
 }
 .edu_title {
-    width: 100%;
-    border-bottom: 1px solid #363636;
-    padding: 10px 20px;
+  width: 100%;
+  border-bottom: 1px solid #363636;
+  padding: 10px 20px;
 }
 .enjover {
   transition: 0.2s;
@@ -77,10 +77,18 @@
   width: 10px;
   height: auto;
 }
-
-
+/*
+=============================================================
+    МОДАЛЬНОЕ ОКНО
+=============================================================
+*/
 .modal {
-  display: none; /* Скрыть модальное окно по умолчанию */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease, visibility 0.7s ease;
+
+  display: block; /* Скрыть модальное окно по умолчанию */
   position: fixed;
   z-index: 9999; /* На переднем плане */
   left: 0;
@@ -90,33 +98,50 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
 }
-
 .modal-content {
-  background-color: #fefefe;
-  margin: 100px 20px 20px 20px; /* Центрирование */
+  background-color: #161616;
+  margin: 15% 200px 20px 200px; /* Центрирование */
   padding: 20px;
   border: 1px solid #888;
   border-radius: 10px;
 }
-
 .close {
+  cursor: pointer;
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
-  color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
+#openModal:hover .ccs {
+  margin-left: 10px;
+}
 button #openModal:hover {
   border-radius: 0 0 0 10px;
   background: #1f1f1f;
 }
+
+/*
+=============================================================
+    ТЕСТ
+=============================================================
+*/
+
+/* Когда активен, показываем его */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+
+
+
 .fj {
   position: absolute;
   filter: brightness(15%);

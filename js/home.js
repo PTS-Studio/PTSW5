@@ -71,21 +71,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-const modal = document.getElementById("modal");
-const openModalButton = document.getElementById("openModal");
-const closeModalButton = document.getElementById("closeModal");
+/*
+=============================================================
+    МОДАЛЬНОЕ ОКНО
+=============================================================
+*/
+// const modal = document.getElementById("modal");
+// const openModalButton = document.getElementById("openModal");
+// const closeModalButton = document.getElementById("closeModal");
 
-// Открыть модальное окно
-openModalButton.onclick = function() {
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden"; // Отключить прокрутку основной области
-}
+// // Открыть модальное окно
+// openModalButton.onclick = function() {
+//     modal.style.display = "block";
+//     document.body.style.overflow = "hidden"; // Отключить прокрутку основной области
+// }
 
-// Закрыть модальное окно
-closeModalButton.onclick = function() {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto"; // Включить прокрутку основной области
-}
+// // Закрыть модальное окно
+// closeModalButton.onclick = function() {
+//     modal.style.display = "none";
+//     document.body.style.overflow = "auto"; // Включить прокрутку основной области
+// }
 
 // Закрыть модальное окно при клике вне его содержимого
 // window.onclick = function(event) {
@@ -94,3 +99,22 @@ closeModalButton.onclick = function() {
 //         document.body.style.overflow = "auto"; // Включить прокрутку основной области
 //     }
 // }
+
+/*
+=============================================================
+    ТЕСТ
+=============================================================
+*/
+const openModalButton = document.getElementById('openModal');
+const modal = document.getElementById('modal');
+const closeModalButton = document.getElementById('closeModal');
+
+openModalButton.onclick = function() {
+  modal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+};
+
+closeModalButton.onclick = function() {
+  modal.classList.remove('show');
+  document.body.style.overflow = 'auto';
+};
