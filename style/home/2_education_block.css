@@ -88,23 +88,30 @@
   pointer-events: none;
   transition: opacity 0.5s ease, visibility 0.7s ease;
 
-  display: block; /* Скрыть модальное окно по умолчанию */
+  display: block;
   position: fixed;
-  z-index: 9999; /* На переднем плане */
+  z-index: 9999;
   left: 0;
   top: 0;
-  width: 100%; /* Полная ширина */
+  width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal.show {
+  visibility: visible;
+  opacity: 1;
 }
 .modal-content {
   background-color: #161616;
-  margin: 15% 200px 20px 200px; /* Центрирование */
+  margin: 15% 200px 20px 200px;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #363636;
   border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
 }
+
 .close {
   cursor: pointer;
   color: #aaa;

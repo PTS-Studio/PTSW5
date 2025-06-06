@@ -16,17 +16,24 @@
   font-optical-sizing: auto;
   text-decoration: none;
   list-style: none;
-  scrollbar-color: #494949 #121212;
-  scrollbar-width: thin;
-  /* scrollbar-gutter: stable; */
+  scrollbar-color: #383838 #121212;
+  scrollbar-width:thin;
+  scrollbar-gutter: stable;
 }
 body {
-  position: relative;
+  /* scrollbar-gutter: stable; */
+  /* overflow-y: visible !important; */
+
+  /* position: fixed;
+  width: 100%;
+  overflow-y: scroll; */
+
   background: #121212;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: visible !important; /*САМОЕ ВАЖНОЕ! ОСТАВЛЯЕТ ШАПКУ НА ОДНОМ МЕСТЕ!*/
+  /* overflow-y: visible !important;
+  overflow: scroll !important; */
 }
 .center_block {
   display: flex;
@@ -40,12 +47,12 @@ body {
 */
 header {
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   flex-wrap: wrap;
   position: fixed;
+  box-sizing: border-box;
   z-index: 2;
-  /* padding-right: 0 !important */
 }
 .absorbing_block {
   width: 1280px;
