@@ -71,11 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-/*
-=============================================================
-    МОДАЛЬНОЕ ОКНО
-=============================================================
-*/
 // const modal = document.getElementById("modal");
 // const openModalButton = document.getElementById("openModal");
 // const closeModalButton = document.getElementById("closeModal");
@@ -172,4 +167,3 @@ closeModalButton.onclick = function() {
 // const onClose = () => {
 //   document.documentElement.removeAttribute('style');
 //   document.body.removeAttribute('style')
-// }
