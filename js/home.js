@@ -102,9 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*
 =============================================================
-    ТЕСТ
+  МОДАЛЬНОЕ ОКНО С КАРТОЙ
 =============================================================
 */
+// Модальное окно для Edge
 const openModalButton = document.getElementById('openModal');
 const modal = document.getElementById('modal');
 const closeModalButton = document.getElementById('closeModal');
@@ -118,75 +119,57 @@ closeModalButton.onclick = function() {
   modal.classList.remove('show');
   document.body.style.overflow = 'auto';
 };
+
+// Модальное окно для Яндекса
 // const openModalButton = document.getElementById('openModal');
 // const modal = document.getElementById('modal');
 // const closeModalButton = document.getElementById('closeModal');
+// const header = document.querySelector('header');
 
 // openModalButton.onclick = function() {
 //   modal.classList.add('show');
-//   document.body.style.cssText = `
-//     position: fixed;
-//     width: 100%;
-//     overflow-y: scroll;
-//   `;
+//   document.body.style.overflow = 'hidden';
+//   if (header) {
+//     const scrollbarWidth = window.innerWidth - document.body.offsetWidth;
+//     header.style.paddingRight = `${scrollbarWidth}px`;
+//   }
 // };
 // closeModalButton.onclick = function() {
 //   modal.classList.remove('show');
-//   document.body.style.cssText = '';
+//   document.body.style.overflow = 'scroll';
+//   if (header) {
+//     header.style.paddingRight = '0px';
+//   }
 // };
 
-// openModalButton.onclick = function() {
-//   modal.classList.add('show');
-//   document.body.style.position = 'fixed';
-//   document.body.style.width = '100%';
-//   // document.body.style.overflowY = 'scroll';
-//   document.body.style.top = `-${window.scrollY}px`
-// };
+// function getBrowser() {
+//   const ua = navigator.userAgent;
+//   if (ua.includes('YandexBrowser')) {
+//     return 'Yandex';
+//   } else if (ua.includes('Edg') || ua.includes('Edge')) {
+//     return 'Edge';
+//   } else {
+//     return 'Other';
+//   }
+// }
 
-// closeModalButton.onclick = function() {
-//   modal.classList.remove('show');
-//   document.body.style.position = '';
-//   document.body.style.width = '';
-//   // document.body.style.overflowY = '';
-// };
+/*
+=============================================================
+  МОДАЛЬНОЕ ОКНО пусто
+=============================================================
+*/
 
-  // const openBtn = document.getElementById('openModal');
-  // const closeBtn = document.getElementById('closeModal');
-  // const modal = document.getElementById('modal');
+// const onOpen = () => {
+//   // проверяем есть ли скролл у html
+//   if(document.documentElement.scrollHeight !== document.documentElement.clientHeight){
+//       document.documentElement.style = 'overflow: hidden;'
+//       document.body.style = 'overflow-y: scroll;'
+//   } else {
+//       document.documentElement.style = 'overflow: hidden;'
+//   }
+// }
 
-  // function disableScroll() {
-  //   const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-  //   document.body.style.overflow = 'hidden';
-  //   document.body.style.paddingRight = scrollBarWidth + 'px';
-
-  // }
-
-  // function enableScroll() {
-  //   document.body.style.overflow = '';
-  //   document.body.style.paddingRight = '';
-  // }
-
-  // openBtn.onclick = () => {
-  //   modal.classList.add('show');
-  //   disableScroll();
-  // };
-
-  // closeBtn.onclick = () => {
-  //   modal.classList.remove('show');
-  //   enableScroll();
-  // };
-
-
-  // modal.onclick = (e) => {
-  //   if (e.target === modal) {
-  //     modal.classList.remove('show');
-  //     enableScroll();
-  //   }
-  // };
-
-  // document.addEventListener('keydown', (e) => {
-  //   if (e.key === 'Escape' && modal.classList.contains('show')) {
-  //     modal.classList.remove('show');
-  //     enableScroll();
-  //   }
-  // });
+// const onClose = () => {
+//   document.documentElement.removeAttribute('style');
+//   document.body.removeAttribute('style')
+// }
