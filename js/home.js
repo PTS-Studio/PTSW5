@@ -108,85 +108,35 @@ document.addEventListener('DOMContentLoaded', function() {
 const openModalButton = document.getElementById('openModal');
 const modal = document.getElementById('modal');
 const closeModalButton = document.getElementById('closeModal');
-
 openModalButton.onclick = function() {
   modal.classList.add('show');
   document.body.style.overflow = 'hidden';
 };
-
 closeModalButton.onclick = function() {
   modal.classList.remove('show');
   document.body.style.overflow = 'auto';
 };
-// const openModalButton = document.getElementById('openModal');
-// const modal = document.getElementById('modal');
-// const closeModalButton = document.getElementById('closeModal');
 
-// openModalButton.onclick = function() {
-//   modal.classList.add('show');
-//   document.body.style.cssText = `
-//     position: fixed;
-//     width: 100%;
-//     overflow-y: scroll;
-//   `;
-// };
-// closeModalButton.onclick = function() {
-//   modal.classList.remove('show');
-//   document.body.style.cssText = '';
-// };
+const openModalButton2 = document.getElementById('openModal2');
+const modal2 = document.getElementById('modal2');
+const closeModalButton2 = document.getElementById('closeModal2');
+openModalButton2.onclick = function() {
+  modal2.classList.add('show');
+  document.body.style.overflow = 'hidden';
+};
+closeModalButton2.onclick = function() {
+  modal2.classList.remove('show');
+  document.body.style.overflow = 'auto';
+};
 
-// openModalButton.onclick = function() {
-//   modal.classList.add('show');
-//   document.body.style.position = 'fixed';
-//   document.body.style.width = '100%';
-//   // document.body.style.overflowY = 'scroll';
-//   document.body.style.top = `-${window.scrollY}px`
-// };
-
-// closeModalButton.onclick = function() {
-//   modal.classList.remove('show');
-//   document.body.style.position = '';
-//   document.body.style.width = '';
-//   // document.body.style.overflowY = '';
-// };
-
-  // const openBtn = document.getElementById('openModal');
-  // const closeBtn = document.getElementById('closeModal');
-  // const modal = document.getElementById('modal');
-
-  // function disableScroll() {
-  //   const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-  //   document.body.style.overflow = 'hidden';
-  //   document.body.style.paddingRight = scrollBarWidth + 'px';
-
-  // }
-
-  // function enableScroll() {
-  //   document.body.style.overflow = '';
-  //   document.body.style.paddingRight = '';
-  // }
-
-  // openBtn.onclick = () => {
-  //   modal.classList.add('show');
-  //   disableScroll();
-  // };
-
-  // closeBtn.onclick = () => {
-  //   modal.classList.remove('show');
-  //   enableScroll();
-  // };
-
-
-  // modal.onclick = (e) => {
-  //   if (e.target === modal) {
-  //     modal.classList.remove('show');
-  //     enableScroll();
-  //   }
-  // };
-
-  // document.addEventListener('keydown', (e) => {
-  //   if (e.key === 'Escape' && modal.classList.contains('show')) {
-  //     modal.classList.remove('show');
-  //     enableScroll();
-  //   }
-  // });
+const openModalButton3 = document.getElementById('openModal3');
+const modal3 = document.getElementById('modal3');
+const closeModalButton3 = document.getElementById('closeModal3');
+openModalButton3.onclick = function() {
+  modal3.classList.add('show');
+  document.body.style.overflow = 'hidden';
+};
+closeModalButton3.onclick = function() {
+  modal3.classList.remove('show');
+  document.body.style.overflow = 'auto';
+};
