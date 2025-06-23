@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Модальное окно с фиксированной шапкой</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* шапка сайта */
+  header {
+    background: #3498db;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin: 10px;
+  }
+
+  /* Контент ниже шапки */
+  .content {
+    padding-top: 100px; /* высота шапки + небольшой отступ */
+  }
+
+  /* Кнопка открытия модалки */
+  button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* Модальное окно */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease, visibility 300ms ease;
+    z-index: 2000;
+  }
+
+  .modal.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 80%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Мой сайт</h1>
+</header>
+
+<div class="content">
+  <button id="openModal">Открыть модальное окно</button>
+  <p>Долгий контент для прокрутки...</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus sit amet urna commodo cursus. Sed cursus, urna ut bibendum posuere, quam orci commodo nunc, a lacinia risus sem in velit. <br/>Повторяю длинный текст...</p>
+  <p style="margin-top: 2000px;">Конец документа</p>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModal">&times;</button>
+    <h2>Это модальное окно</h2>
+    <p>Здесь можно разместить любые элементы.</p>
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openModal');
+  const closeBtn = document.getElementById('closeModal');
+  const modal = document.getElementById('modal');
+
+  function disableScroll() {
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden'; // запрет прокрутки
+    document.body.style.paddingRight = scrollBarWidth + 'px'; // компенсация скроллбара
+    // фиксируем ширину для шапки, чтобы она не сдвигалась
+    // поскольку header фиксируется, его позиция останется.
+  }
+
+  function enableScroll() {
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+  }
+
+  openBtn.onclick = () => {
+    modal.classList.add('show');
+    disableScroll();
+  };
+
+  closeBtn.onclick = () => {
+    modal.classList.remove('show');
+    enableScroll();
+  };
+
+  // закрытие по клику за пределами контента
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+      enableScroll();
+    }
+  };
+
+  // закрытие по Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      modal.classList.remove('show');
+      enableScroll();
+    }
+  });
+</script>
+</body>
+</html>
