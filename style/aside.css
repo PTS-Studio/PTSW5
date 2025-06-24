@@ -1,6 +1,7 @@
 .aside_main {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 1280px;
     margin: 20px 20px 20px 20px;
     border-radius: 10px;
@@ -38,7 +39,7 @@ main.hidden {
     padding: 0;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid #2d2d2d;
+    border: 1px solid #363636;
     background: #161616;
     transition: 0.2s;
     box-shadow: 0 5px 8px rgb(0, 0, 0, 0.2);
