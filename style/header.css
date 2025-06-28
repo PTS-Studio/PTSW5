@@ -11,7 +11,10 @@
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Consolas';
+  font-family: system-ui;
+  letter-spacing: 0.6px;
+  line-height: 22px;
+  font-size: 15px;
   box-sizing: border-box;
   font-optical-sizing: auto;
   text-decoration: none;

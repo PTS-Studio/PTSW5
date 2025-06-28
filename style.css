@@ -1,0 +1,65 @@
+.noise::before {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.5; /*0.45*/
+    z-index: 10000;
+    pointer-events: none;
+    background: url(6674f0cdb5b7b401612cf065_noise-50.avif) repeat;
+}
+:root {
+  --background-color: #212121;
+  --font: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Timeline Container */
+.timeline {
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid orangered;
+}

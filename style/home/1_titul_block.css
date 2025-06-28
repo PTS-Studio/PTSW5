@@ -13,18 +13,9 @@
     /* line-height: 28px; */
     /* font-size: 15px; */
 }
-.TPEK {
-    width: 100%;
-    color: #121212;
-    background: #e2e8f0;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    padding-left: 20px;
-    border-radius: 3px;
-}
+
 .text-p {
-    font-size: 15px;
+    font-size: 13px;
     color: white;
 }
 .titul-text-p {
@@ -62,13 +53,13 @@
 .avatar {
     position: absolute;
     top: 125px;
-    left: 20px;
-    width: 150px;
-    height: 150px;
+    left: 30px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    border: 5px solid #161616;
-    padding: 3px;
-    background: white;
+    border: 8px solid #161616;
+    /* padding: 3px; */
+    /* background: white; */
 }
 .titul_sector_top {
     width: 100%;
@@ -96,26 +87,32 @@
 }
 .sector_block_left {
     width: 58%;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 30px 40px 30px;
     border-radius: 0 0 0 10px;
 }
 .sector_block_right {
     width: 42%;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0px 20px 0px;
+    padding: 50px 0px 40px 0px;
     border-left: 1px solid #363636;
     border-radius: 0 0 10px 0;
 }
 .button_titul {
     width: auto;
-    padding: 5px 20px;
+    padding: 5px 18px;
     border-radius: 5px;
-    background: #363636;
+    border: 1px solid #4b4b4b;
+    background: #292929;
+    transition: 0.2s;
+}
+.button_titul:hover {
+    border: 1px solid white;
+    cursor: pointer;
 }
 .button_titul2 {
     width: 100%;
-    padding: 20px;
+    padding: 20px 30px;
     border-top: 1px solid #363636;
     transition: 0.3s;
     cursor: pointer;
