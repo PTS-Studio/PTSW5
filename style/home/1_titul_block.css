@@ -87,14 +87,14 @@
 }
 .sector_block_left {
     width: 58%;
-    padding: 50px 30px 40px 30px;
+    padding: 40px 30px 40px 30px;
     border-radius: 0 0 0 10px;
 }
 .sector_block_right {
     width: 42%;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0px 40px 0px;
+    padding: 40px 0px 40px 0px;
     border-left: 1px solid #363636;
     border-radius: 0 0 10px 0;
 }

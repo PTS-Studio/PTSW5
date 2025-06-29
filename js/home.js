@@ -23,9 +23,9 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-const openModalButton = document.getElementById('openModal');
-const modal = document.getElementById('modal');
-const closeModalButton = document.getElementById('closeModal');
+const openModalButton = document.getElementById('open_modal1');
+const modal = document.getElementById('modal1');
+const closeModalButton = document.getElementById('closeModal1');
 openModalButton.onclick = function() {
   modal.classList.add('show');
   document.body.style.overflow = 'hidden';
@@ -35,7 +35,7 @@ closeModalButton.onclick = function() {
   document.body.style.overflow = 'auto';
 };
 
-const openModalButton2 = document.getElementById('openModal2');
+const openModalButton2 = document.getElementById('open_modal2');
 const modal2 = document.getElementById('modal2');
 const closeModalButton2 = document.getElementById('closeModal2');
 openModalButton2.onclick = function() {
@@ -47,8 +47,8 @@ closeModalButton2.onclick = function() {
   document.body.style.overflow = 'auto';
 };
 
-const openModalButton3 = document.getElementById('openModal3');
-const modal3 = document.getElementById('modal3');
+const openModalButton3 = document.getElementById('open_modal3');
+const modal3 = document.getElementById('modal_block');
 const closeModalButton3 = document.getElementById('closeModal3');
 openModalButton3.onclick = function() {
   modal3.classList.add('show');

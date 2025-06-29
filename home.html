@@ -152,7 +152,7 @@
                     <div class="cover_block">
                         <div class="header_titul_block">
                             <div class="header_titul_block_left">
-                                <div class="n_block" style="width: 190px; height: 100%; border-right: 1px solid #363636; border-radius: 0 10px 0 0;"></div>
+                                <div class="n_block" style="width: 190px; height: 100%;"></div>
                                 <!-- <div class="qs" style="width: auto; height: 100%; align-items: center; display: flex; flex-wrap: wrap; gap: 10px;">
                                     <img src="images/Статьи.svg" alt="" style="width: 15px; height: auto;">
                                     <p>Статьи: 0</p>
@@ -226,71 +226,92 @@
                         <img src="images/Bez_foto_2.jpg" class="avatar" alt="">
                     </div>
                 </div>
-                <div class="education_block" style="background: none; border: none; gap: 20px;">
-                    <div class="ds" style="display: flex; flex: 1 1 55%; border: 1px solid #363636; border-radius: 10px; height: 200px; background: #161616;">
-                        <div class="heading_block">
-                            <p class="h1-2-text">Образование</p>
-                        </div>
-                    </div>
-                    <div class="ds" style="display: flex; flex: 1 1 40%; border: 1px solid #363636; border-radius: 10px; height: 200px; background: #161616;"></div>
-                </div>
                 <div class="education_block">
-                    <div class="heading_block"><h2 class="h2-heading">Образование</h2></div>
-                    <div class="sector_block_left" style=" padding: 30px;">
-                        <div class="text_block">
-                            <p style="margin-top: 20px; font-size: 20px; font-weight: 600; margin-bottom: 5px;">Тверской промышленно-экономический колледж</p>
-                            <p style="color: rgb(215, 215, 215);">2023-2027г</p>
-                            <p style="color: rgb(215, 215, 215); margin-top: 20px;">В настоящее время Тверской промышленно-экономический колледж является крупным учреждением профобразования, который готовит специалистов в сфере технологии лёгкой промышленности, информатики и вычислительной техники, информационной безопасности, экономики и управления, сервиса и туризма, изобразительного и прикладного видов искусств.</p>
+                    <div class="ed_heading_block">
+                        <div class="ed_heading_content">
+                            <h1 class="h1-heading-ed">Образование</h1>
                         </div>
                     </div>
-                    <div class="sector_block_right" style="padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="images/ТПЭК1.jpg" class="img_sliders">
+                    <div class="ed_top_block">
+                        <div class="ed_sector_block">
+                            <div class="ed_sector_content">
+                                <img src="images/education_block/колледж.svg" alt="" class="ed--icon">
                             </div>
-                            <div class="mySlides fade">
-                                <img src="images/ТПЭК20(2).jpg" class="img_sliders">
+                            <div class="ed_sector_content">
+                                <h2 class="h2-heading-ed">Колледж</h2>
+                                <p class="p-text-ed">ГБПОУ Тверской промышленно-экономический колледж</p>
                             </div>
-                            <div class="mySlides fade">
-                                <img src="images/XXXL (6).png" class="img_sliders">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                        <br>
-                        <div style="width: 100%; display: flex; flex-wrap: wrap; gap: 5px; height: 5px; margin: 0 auto; margin-top: 10px;">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-                    </div>
-                    <div id="sections1" class="sections">
-                        <a href="#23" id="section_block1" class="section_block" style="padding: 20px;">
-                            <p style="font-size: 14px;">Оффициальный сайт колледжа</p>
-                        </a>
-                        <a href="#24" id="section_block2" class="section_block" style="padding: 20px;">
-                            <p style="font-size: 14px;">Тверская Область, Тверь, ул Спартака, д. 39</p>
-                        </a>
-                    </div>
 
-                    <div id="sections2" class="sections">
-                        <div id="section_block3" class="section_block">
-                            <button id="openModal" style="font-size: 14px;">Учебные проекты</button>
+                        <div class="ed_sector_block">
+                            <div class="ed_sector_content">
+                                <img src="images/education_block/календарь.svg" alt="" class="ed--icon">
+                            </div>
+                            <div class="ed_sector_content">
+                                <h2 class="h2-heading">Время обучения</h2>
+                                <p class="p-text-ed">2023 - 2027 (полное, заочное обучение)</p>
+                            </div>
                         </div>
-                        <div id="modal" class="modal">
-                            <div class="modal-content">
-                                <div class="edu_title">
-                                    <h3>Учебные проекты</h3>
-                                    <span id="closeModal" class="close">&times;</span>
+
+                        <div class="ed_sector_block">
+                            <div class="ed_sector_content">
+                                <img src="images/education_block/адрес.svg" alt="" class="ed--icon">
+                            </div>
+                            <div class="ed_sector_content">
+                                <h2 class="h2-heading">Адрес</h2>
+                                <p class="p-text-ed">Тверская Область, Тверь, ул Спартака, д. 39</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ed_bottom_block">
+                        <a href="#Сайт1" id="ed_structure1" class="ed_structure_link">
+                            <p class="p-text-ed">Оффициальный сайт колледжа</p>
+                        </a>
+                        <div id="ed_structure2" class="ed_structure_link">
+                            <button id="open_modal1" class="p-text-ed">Учебные проекты</button>
+                        </div>
+                        <div id="ed_structure3" class="ed_structure_link">
+                            <button id="open_modal2" class="p-text-ed">Дипломная работа</button>
+                        </div>
+
+                        <div id="modal1" class="modal_block">
+                            <div class="modal_content">
+                                <div class="ed_heading_block">
+                                    <div class="ed_heading_content">
+                                        <h3>Учебные проекты</h3>
+                                        <span id="closeModal1" class="close">&times;</span>
+                                    </div>
+                                    <div class="ed_top_block2">
+                                            <div class="ed_project_card" style="margin-top: 0;">
+                                                <h1 class="h1-heading-ed">Калькулятор</h1>
+                                                <p class="p-text-ed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugit nobis. Tempore sequi fugit ad aspernatur quibusdam deleniti adipisci? Officiis itaque at saepe tempore eveniet, quae amet non a quo.</p>
+                                                <div class="ed_list_tecnology" style="width: 100%; height: auto; align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+                                                    <p class="button_titul">С#</p>
+                                                    <p class="button_titul">С#</p>
+                                                </div>
+                                            </div>
+                                            <div class="ed_project_card">
+                                                <h1 class="h1-heading-ed">Калькулятор</h1>
+                                                <p class="p-text-ed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugit nobis. Tempore sequi fugit ad aspernatur quibusdam deleniti adipisci? Officiis itaque at saepe tempore eveniet, quae amet non a quo.</p>
+                                                <div class="ed_list_tecnology" style="width: 100%; height: auto; align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+                                                    <p class="button_titul">С#</p>
+                                                    <p class="button_titul">С#</p>
+                                                </div>
+                                            </div>
+                                            <div class="ed_project_card">
+                                                <h1 class="h1-heading-ed">Калькулятор</h1>
+                                                <p class="p-text-ed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugit nobis. Tempore sequi fugit ad aspernatur quibusdam deleniti adipisci? Officiis itaque at saepe tempore eveniet, quae amet non a quo.</p>
+                                                <div class="ed_list_tecnology" style="width: 100%; height: auto; align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+                                                    <p class="button_titul">С#</p>
+                                                    <p class="button_titul">С#</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div id="section_block4" class="section_block">
-                            <button id="openModal2" style="font-size: 14px;">Дипломная работа</button>
-                        </div>
-                        <div id="modal2" class="modal2">
-                            <div class="modal-content">
+                        <div id="modal2" class="modal_block">
+                            <div class="modal_content">
                                 <div class="edu_title">
                                     <h3>Дипломная работа</h3>
                                     <span id="closeModal2" class="close">&times;</span>
