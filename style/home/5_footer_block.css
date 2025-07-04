@@ -1,0 +1,9 @@
+.footer_block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #363636;
+    background: #161616;
+    
+}

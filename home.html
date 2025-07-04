@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/home/2_education_block.css">
     <link rel="stylesheet" href="style/home/3_experience_works.css">
     <link rel="stylesheet" href="style/home/4_question_block.css">
-    <link rel="stylesheet" href="style/home/5_project.css">
+    <link rel="stylesheet" href="style/home/5_footer_block.css">
     <link rel="stylesheet" href="js/home.js">
     <title>Сайт-портфолио</title>
 </head>
@@ -19,7 +19,7 @@
             <div class="absorbing_block">
                 <div class="header_block">
                     <div class="hd_sector">
-                        <div class="hd_link" style="border-radius: 10px 0 0 10px;">
+                        <div id="hd_link1" class="hd_link">
                             <div class="hd_link_content">
                                 <img src="images/HeaderMenu/logotip2.svg" alt="logotip" class="logotip-pts">
                                 <p>PTS-STUDIO</p>
@@ -27,39 +27,31 @@
                         </div>
                     </div>
                     <div class="hd_sector">
-                        <a href="home.html" class="hd_link" style="border-left: 1px solid #363636;">
+                        <a href="home.html" id="hd_link2" class="hd_link">
                             <div class="hd_link_content">
                                 <div class="dropdown_section">
-                                    <li>
-                                        Главная
-                                    </li>
+                                    <li>Главная</li>
                                 </div>
                             </div>
                         </a>
-                        <a href="works.html" class="hd_link">
+                        <a href="works.html" id="hd_link3" class="hd_link">
                             <div class="hd_link_content">
                                 <div class="dropdown_section">
-                                    <li>
-                                        Работы и проекты
-                                    </li>
+                                    <li>Работы и проекты</li>
                                 </div>
                             </div>
                         </a>
-                        <a href="#contacts" class="hd_link">
+                        <a href="#contacts" id="hd_link4" class="hd_link">
                             <div class="hd_link_content">
                                 <div class="dropdown_section">
-                                    <li>
-                                        Контакты
-                                    </li>
+                                    <li>Контакты</li>
                                 </div>
                             </div>
                         </a>
-                        <a href="#news" class="hd_link" style="border-right: none; border-radius: 0 10px 10px 0;">
+                        <a href="#news" id="hd_link5" class="hd_link">
                             <div class="hd_link_content">
                                 <div class="dropdown_section">
-                                    <li>
-                                        Новости
-                                    </li>
+                                    <li>Новости</li>
                                 </div>
                             </div>
                         </a>
@@ -67,7 +59,7 @@
                 </div>
                 <div class="header_block_mobile">
                     <div class="hd_sector_mobile">
-                        <div class="hd_link" style="border-radius: 10px 0 0 10px;">
+                        <div class="hd_link" id="hd_link1">
                             <div class="hd_link_content">
                                 <img src="images/HeaderMenu/logotip2.svg" alt="logotip" class="logotip-pts">
                                 <p>PTS-STUDIO</p>
@@ -79,7 +71,7 @@
                                 <div class="mobile_menu_content">
                                     <li class="mobile_menu_content_list">
                                         <a href="#1" class="link_mobile">
-                                            <p style="font-size: 18px;">Главная</p>
+                                            <p>Главная</p>
                                             <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
@@ -101,7 +93,7 @@
                                             <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
-                                    <div class="button10" style="width: 100%;">
+                                    <div class="button10">
                                         <p style="color: black;">информация о сайте</p>
                                     </div>
                                 </div>
@@ -175,12 +167,12 @@
                         <div class="sector_block_left">
                             <div class="po" style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%;">
                                 <h1 class="h1-2-text">Путилин Андрей Андреевич</h1>
-                                <p style="padding: 0px 10px; background: rgba(145, 145, 145, 0.477); border-radius: 20px; border: 1px solid rgb(193, 193, 193); font-size: 10px; color: rgb(193, 193, 193);">Веб-разработчик</p>
+                                <!-- <p style="padding: 0px 10px; background: rgba(145, 145, 145, 0.477); border-radius: 20px; border: 1px solid rgb(193, 193, 193); font-size: 10px; color: rgb(193, 193, 193);">Веб-разработчик</p> -->
                             </div>
                             
                             <div class="ghf" style="margin-top: 20px;">
                                 <p class="h2-1">Обо мне</p>
-                                <p style="color: rgb(215, 215, 215); font-size: 15px;">Я занимаюсь разработкой программ и веб-приложений с использованием технологий анализа данных, стараюсь создавать качественные и безопасные приложения, использующие систему Microsoft SQL Server, которая обеспечивает надёжность хранения и целостности больших объемов информации.</p>
+                                <p style="color: rgb(215, 215, 215);">Я занимаюсь разработкой программ и веб-приложений с использованием технологий анализа данных, стараюсь создавать качественные и безопасные приложения, использующие систему Microsoft SQL Server, которая обеспечивает надёжность хранения и целостности больших объемов информации.</p>
                             </div>
                             <div class="ghf">
                                 <p class="h2-2">Специальность</p>
@@ -206,16 +198,22 @@
                             <div class="pip" style="width: 100%; flex-wrap: wrap; flex-direction: column;">
                                 <h1 class="h1-text">Дополнительно</h1>
                                 <div class="button_titul2" style="margin-top: 20px;">
-                                    <p class="h2-3">GitHub</p>
-                                    <p style="color: rgb(215, 215, 215);">Вы можете просмотреть весь исходный код на платформе GitHub, где хранятся мои работы и проекты</p>
+                                    <a href="https://github.com/PTS-Studio" class="titul_link_l">
+                                        <p class="h2-3">GitHub</p>
+                                        <p style="color: rgb(215, 215, 215);">Вы можете просмотреть весь исходный код на платформе GitHub, где хранятся мои работы и проекты</p>
+                                    </a>
                                 </div>
                                 <div class="button_titul2">
-                                    <p class="h2-3">RuTube</p>
-                                    <p style="color: rgb(215, 215, 215);">Видео хостиг, в котором я выкладываю отчеты о тестировании моих проектов перед их публикацией в интернет</p>
+                                    <a href="https://github.com/PTS-Studio" class="titul_link_l">
+                                        <p class="h2-3">RuTube</p>
+                                        <p style="color: rgb(215, 215, 215);">Видео хостиг, в котором я выкладываю отчеты о тестировании моих проектов перед их публикацией в интернет</p>
+                                    </a>
                                 </div>
                                 <div class="button_titul2">
-                                    <p class="h2-3">Форма связи</p>
-                                    <p style="color: rgb(215, 215, 215);">Заполните форму обратной связи, чтобы вы смогли связаться со мной или задать интерисующий вопрос</p>
+                                    <a href="https://github.com/PTS-Studio" class="titul_link_l">
+                                        <p class="h2-3">Форма связи</p>
+                                        <p style="color: rgb(215, 215, 215);">Заполните форму обратной связи, чтобы вы смогли связаться со мной или задать интерисующий вопрос</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -223,38 +221,13 @@
                     </div>
                 </div>
                 <div class="education_block">
-                    <div class="ed_top_block">
-                        <div id="ed_sector_block1" class="ed_sector_block">
-                            <div class="ed_sector_content">
-                                <img src="images/education_block/колледж.svg" alt="" class="ed--icon">
-                            </div>
-                            <div class="ed_sector_content">
-                                <h2 class="h2-heading-ed">Колледж</h2>
-                                <p class="p-text-ed">ГБПОУ Тверской промышленно-экономический колледж</p>
-                            </div>
-                        </div>
-
-                        <div id="ed_sector_block2" class="ed_sector_block">
-                            <div class="ed_sector_content">
-                                <img src="images/education_block/календарь.svg" alt="" class="ed--icon">
-                            </div>
-                            <div class="ed_sector_content">
-                                <h2 class="h2-heading-ed">Время обучения</h2>
-                                <p class="p-text-ed">2023 - 2027 (полное, заочное обучение)</p>
-                            </div>
-                        </div>
-
-                        <div id="ed_sector_block3" class="ed_sector_block" style="border-right: none;">
-                            <div class="ed_sector_content">
-                                <img src="images/education_block/адрес.svg" alt="" class="ed--icon">
-                            </div>
-                            <div class="ed_sector_content">
-                                <h2 class="h2-heading-ed">Адрес</h2>
-                                <p class="p-text-ed">Тверская Область, Тверь, ул Спартака, д. 39</p>
-                            </div>
-                        </div>
+                    <div class="sector_block_left">
+                        <h1 class="h1-2-text">Образование</h1>
+                        <p class="h2-1">ГБПОУ Тверской промышленно-экономический колледж</p>
+                        <p style="color: rgb(215, 215, 215); margin-top: 10px;">В настоящее время Тверской промышленно-экономический колледж является крупным учреждением профобразования, который готовит специалистов в сфере технологии лёгкой промышленности, информатики и вычислительной техники, информационной безопасности, экономики и управления, сервиса и туризма, изобразительного и прикладного видов искусств.</p>
                     </div>
-                    <div class="ed_bottom_block">
+                    <div class="sector_block_right">
+                        <h1 class="h1-text" style="width: 100%; margin-bottom: 20px;">Дополнительно</h1>
                         <a href="#Сайт1" id="ed_structure1" class="ed_structure_link">
                             <p class="p-text-ed">Оффициальный сайт колледжа</p>
                         </a>
@@ -324,7 +297,23 @@
                     </div>
                 </div>
                 <div class="experience_work">
-                    <div class="ew_top_block">
+                    <div class="sector_block_left">
+                        <h1 class="h1-2-text">Учебная практика</h1>
+                        <p class="h2-1">Деятельность</p>
+                        <p style="color: rgb(215, 215, 215); margin-top: 10px;">Разработка классических приложений Windows с использованием технологий Win Form и WPF</p>
+                        <p class="h2-1" style="border-top: none; margin: 0;">Функциональные обязанности</p>
+                        <ul style="margin: 10px 0 0 20px;">
+                            <li class="p-text-ed" style="list-style-type: disc;">Проектирование дизайна через среду разработки Visual Studio</li>
+                            <li class="p-text-ed" style="list-style-type: disc;">Разработка алгоритмов и вычислительных процессов на языке C#</li>
+                        </ul>
+                        <p class="h2-1" style="border-top: none; margin: 0;">Профессиональные достижения</p>
+                        <p style="color: rgb(215, 215, 215); margin-top: 10px;">Научился рограммировать простые классические приложения, необходимые для выполнения бизнес-задач.</p>
+
+                    </div>
+                    <div class="sector_block_right">
+
+                    </div>
+                    <!-- <div class="ew_top_block">
                         <div class="ew_top_content">
                             <p class="h2-heading-ed">Учебная практика</p>
                             <p class="h2-heading-ed">19.05.2025 - 29.06.2025</p>
@@ -358,9 +347,9 @@
                                 <p class="p-text-ed">Научился рограммировать простые классические приложения, необходимые для выполнения бизнес-задач.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="question_block" style="background: #161616;">
+                <div class="question_block">
                     <div class="toggler">
                         <input type="checkbox" id="toggler__checkbox-id-1-1" class="toggler__checkbox">
                         <label for="toggler__checkbox-id-1-1" class="toggler__label">
@@ -405,7 +394,9 @@
                         <span class="toggler__content-box">В процессе обучения я планирую добавлять новые проекты, развивать дизайн, разрабатывать новые блоки и анимации, а также устранять баги и проблемы производительности на сайте.</span>
                     </div>
                 </div>
-                <div class="footer_block" style="width: 100%; height: 400px; border: 1px solid #363636; background: #161616; display: flex; flex-wrap: wrap;"></div>
+                <div class="footer_block">
+                    
+                </div>
             </main>
         </div>
         

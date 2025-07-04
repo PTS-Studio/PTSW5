@@ -14,7 +14,7 @@
   font-family: system-ui;
   letter-spacing: 0.6px;
   line-height: 22px;
-  font-size: 15px;
+  font-size: 14px;
   box-sizing: border-box;
   font-optical-sizing: auto;
   text-decoration: none;
@@ -93,6 +93,16 @@ header.hidden {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+#hd_link1 {
+  border-radius: 10px 0 0 10px;
+}
+#hd_link2 {
+  border-left: 1px solid #363636;
+}
+#hd_link5 {
+  border-radius: 0 10px 10px 0;
+  border-right: none;
 }
 .hd_link {
   height: 100%;
