@@ -82,7 +82,7 @@ header.hidden {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
+  box-shadow: 0 10px 8px rgb(0, 0, 0, 0.3);
   border-radius: 10px;
   align-items: center;
   background: #161616;
@@ -184,23 +184,26 @@ header.hidden {
     background-color: #1b1b1b;
   }
 
-  /* Меню, которое появляется */
-  .menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 60px);
-    transform: translateY(100%);
-    transition: transform 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    z-index: 9;
-  }
-  /* Когда меню открыто */
-  .menu.open {
-    transform: translateY(0);
-  }
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Добавлена opacity в transition */
+  display: flex; /* Всегда flex */
+  flex-direction: column;
+  z-index: 9;
+  opacity: 0; /* Изначально невидимый */
+  pointer-events: none; /* Запрещаем взаимодействие, когда невидимый */
+}
+
+.menu.open {
+  transform: translateY(0);
+  opacity: 1; /* Делаем видимым */
+  pointer-events: auto; /* Разрешаем взаимодействие */
+}
 
   /* Контент внутри меню */
   .menu-content {

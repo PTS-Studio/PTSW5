@@ -39,9 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */ /*Центрируем по горизонтали*/
-    margin-bottom: 20px;
 }
 .h1_block {
     width: 100%;

@@ -1,27 +1,76 @@
-// if (navigator.userAgent.toLowerCase().indexOf('yabrowser') > -1) {
-//   document.documentElement.classList.add('yandex-browser');
-// }
+const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+const mainContent = document.querySelector('main'); // предполагается, что главный контент внутри тега <main>
+
+// Функция для управления прокруткой
+function toggleScroll(shouldDisable) {
+    if (shouldDisable) {
+        document.body.style.overflow = 'hidden'; // отключить скролл
+        // Сохраняем текущую позицию прокрутки
+        const scrollY = window.scrollY;
+        document.body.dataset.scrollY = scrollY; // сохраняем
+    } else {
+        document.body.style.overflow = ''; // вернуть прокрутку
+        // Восстановить позицию прогрутки
+        const scrollY = document.body.dataset.scrollY;
+        if (scrollY !== undefined) {
+            window.scrollTo(0, parseInt(scrollY));
+        }
+        delete document.body.dataset.scrollY;
+    }
+}
+// Функция для плавного скрытия/показа основного контента
+function fadeMainContent(show) {
+    if (show) {
+        mainContent.style.transition = 'opacity 0.5s ease';
+        mainContent.style.opacity = '1';
+        mainContent.style.pointerEvents = 'auto';
+    } else {
+        mainContent.style.transition = 'opacity 0.5s ease';
+        mainContent.style.opacity = '0';
+        mainContent.style.pointerEvents = 'none';
+    }
+}
+// Переключение меню и управление скроллом/анимацией
+menuBtn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    if (isOpen) {
+        toggleScroll(true);
+        fadeMainContent(false);
+    } else {
+        toggleScroll(false);
+        fadeMainContent(true);
+    }
+});
+
+/*
+=============================================================
+    АНИМАЦИЯ СКРЫТИЯ HEADER
+=============================================================
+*/
+
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', function() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+    // Пользователь листает вниз
+    header.classList.add('hidden');
+  } else {
+    // Пользователь листает вверх
+    header.classList.remove('hidden');
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
 /*
 =============================================================
     МОДАЛЬНОЕ ОКНО
 =============================================================
 */
-// let lastScrollTop = 0;
-// const header = document.getElementById('header');
-
-// window.addEventListener('scroll', function() {
-//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//   if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
-//     // Пользователь листает вниз
-//     header.classList.add('hidden');
-//   } else {
-//     // Пользователь листает вверх
-//     header.classList.remove('hidden');
-//   }
-
-//   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-// });
 
 const openModalButton = document.getElementById('open_modal1');
 const modal = document.getElementById('modal1');

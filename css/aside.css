@@ -16,6 +16,9 @@ main {
     border-radius: 10px;
     /* margin-left: 270px; */
     margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .main_block {
     width: 100%;
@@ -115,5 +118,8 @@ main.hidden {
 @media (max-width: 850px) {
     .aside_main {
         margin: 10px 10px 0 10px;
+    }
+    main {
+        gap: 10px;
     }
   }

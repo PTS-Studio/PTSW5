@@ -38,3 +38,11 @@ footer {
     flex-direction: column;
     flex: 1 1 220px;
 }
+@media (max-width: 850px) {
+    footer {
+        margin: 10px 0;
+    }
+    .footer_block {
+        margin: 0 10px 10px 10px;
+    }
+  }
