@@ -14,7 +14,33 @@
     <title>Сайт-портфолио</title>
 </head>
 <body>
-    <header id="header"> <!--id="header"-->
+    <!-- <div id="splash-screen">
+        <div id="logo">
+            <img src="images/HeaderMenu/logotip2.svg" alt="" style="width: 150px; height: auto;">
+            PTS-STUDIO
+        </div>
+        <div id="copyright">© 2025 PTS-Studio All rights reserved.</div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const splashScreen = document.getElementById('splash-screen');
+            const content = document.getElementById('content');
+
+            // Функция для скрытия заставки
+            function hideSplashScreen() {
+                splashScreen.style.opacity = '0'; // Запускаем исчезновение
+                setTimeout(() => {
+                    splashScreen.style.display = 'none'; // Скрываем заставку
+                    content.style.display = 'block'; // Показываем контент
+                    document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
+                }, 500); // Задержка должна соответствовать времени transition в CSS
+            }
+
+            // Задержка перед скрытием заставки (например, 3 секунды)
+            setTimeout(hideSplashScreen, 3000);
+        });
+    </script> -->
+    <header> <!--id="header"-->
         <div class="header">
             <div class="absorbing_block">
                 <div class="header_block">
@@ -37,7 +63,7 @@
                         <a href="2_works.html" id="hd_link3" class="hd_link">
                             <div class="hd_link_content">
                                 <div class="dropdown_section">
-                                    <li>Работы и проекты</li>
+                                    <li>Портфолио</li>
                                 </div>
                             </div>
                         </a>
@@ -77,7 +103,7 @@
                                     </li>
                                     <li class="mobile_menu_content_list">
                                         <a href="2_works.html" class="link_mobile">
-                                            <p>Мои работы</p>
+                                            <p>Портфолио</p>
                                             <img src="images/strelka.svg" alt="" class="strelka">
                                         </a>
                                     </li>
@@ -104,33 +130,39 @@
             </div>
         </div>
     </header>
+    <!-- <div class="popo" style="width: 250px; height: 100px; background: yellow; border: 1px solid #363636; border-bottom: none; position: fixed; margin: 0 20px 20px 20px;"></div> -->
     <div class="center_block">
         <div class="aside_main">
             <aside>
                 <div class="aside_block">
-                    <a href="#about_web" class="aside_sector_contect2" style="padding: 20px; background: #161616; border: 1px solid #363636; border-radius: 10px;">О сайте</a>
+                    <img src="images/Aside/h7.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
+                    <a href="#about_web" class="aside_sector_contect2" style="padding: 20px; background: #161616; border: 1px solid #363636; border-radius: 10px; height: 60px;">О сайте</a>
                     <div class="aside_sector">
                         <div class="top" style="width: 100%;">
-                            
                             <div class="aside_sector_contect" style="border-radius: 10px 10px 0 0;">
-                                <img src="images/Aside/b1.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
-                                <a href="" style="cursor: default; margin-left: 40px;">Обо мне</a>
+                                <!-- <img src="images/Aside/b1.svg" alt="" style="width: 20px; height: 20px; position: absolute;"> -->
+                                <img src="images/Aside/h2.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
+                                <a href="" style="cursor: default; margin-left: 40px;">Статистика</a>
                             </div>
                             <div class="aside_sector_contect">
-                                <img src="images/Aside/b2.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
-                                <a href="" style="cursor: default; margin-left: 40px;">Образовние</a>
+                                <!-- <img src="images/Aside/b2.svg" alt="" style="width: 20px; height: 20px; position: absolute;"> -->
+                                <img src="images/Aside/h3.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
+                                <a href="" style="cursor: default; margin-left: 40px;">Отчеты</a>
                             </div>
                             <div class="aside_sector_contect">
-                                <img src="images/Aside/b3.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
-                                <a href="" style="cursor: default; margin-left: 40px;">Опыт работы</a>
-                            </div>
-                            <div class="aside_sector_contect">
-                                <img src="images/Aside/b4.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
-                                <a href="" style="cursor: default; margin-left: 40px;">Вопросы</a>
-                            </div>
-                            <div class="aside_sector_contect">
-                                <img src="images/Aside/b5.svg" alt="" style="width: 20px; height: 20px; position: absolute;">
+                                <!-- <img src="images/Aside/b5.svg" alt="" style="width: 20px; height: 20px; position: absolute;"> -->
+                                <img src="images/Aside/h1.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
                                 <a href="" style="cursor: default; margin-left: 40px;">Настройки</a>
+                            </div>
+                            <div class="aside_sector_contect">
+                                <!-- <img src="images/Aside/b4.svg" alt="" style="width: 20px; height: 20px; position: absolute;"> -->
+                                <img src="images/Aside/h5.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
+                                <a href="" style="cursor: default; margin-left: 40px;">Справка</a>
+                            </div>
+                            <div class="aside_sector_contect">
+                                <!-- <img src="images/Aside/b3.svg" alt="" style="width: 20px; height: 20px; position: absolute;"> -->
+                                <img src="images/Aside/h4.svg" alt="" style="width: 18px; height: 18px; position: absolute;">
+                                <a href="" style="cursor: default; margin-left: 40px;">Оставить отзыв</a>
                             </div>
                         </div>
                         <div class="bottom" style="width: 100%;">
@@ -304,19 +336,19 @@
                 <div class="experience_work">
                     <div class="sector_block_left">
                         <div class="heading_bl" style="width: 100%;">
-                            <h1 class="h1-2-text">Учебная практика</h1>
+                            <h1 class="h1-2-text">Учебная практика 2025</h1>
                         </div>
                        
                         <p class="h2-1">Деятельность</p>
                         <p style="color: rgb(215, 215, 215); margin-top: 10px;">Разработка классических приложений Windows с использованием технологий Win Form и WPF</p>
                         <p class="h2-1" style="border-top: none; margin: 0;">Функциональные обязанности</p>
-                            <p style="margin-top: 10px; color: rgb(215, 215, 215);">Проектирование дизайна через среду разработки Visual Studio</p>
-                            <p style="color: rgb(215, 215, 215);">Разработка алгоритмов и вычислительных процессов на языке C#</p>
+                        <p style="margin-top: 10px; color: rgb(215, 215, 215);">Проектирование дизайна через среду разработки Visual Studio</p>
+                        <p style="color: rgb(215, 215, 215);">Разработка алгоритмов и вычислительных процессов на языке C#</p>
                         <p class="h2-1" style="border-top: none; margin: 0;">Профессиональные достижения</p>
                         <p style="color: rgb(215, 215, 215); margin-top: 10px;">Научился рограммировать простые классические приложения, необходимые для выполнения бизнес-задач.</p>
 
                     </div>
-                    <div class="sector_block_right" style="background: #000000; align-items: center;">
+                    <div class="sector_block_right" style="background: #111010; align-items: center;">
                         <img src="images/Учебная работа3.png" alt="" style="object-fit: cover; width: 100%; height: auto;">
                         <!-- <div class="heading_bl" style="width: 100%;">
                             <h1 class="h1-2-text" style="padding-left: 30px;">Фото</h1>
@@ -370,46 +402,43 @@
                         <span class="toggler__content-box">В процессе обучения я планирую добавлять новые проекты, развивать дизайн, разрабатывать новые блоки и анимации, а также устранять баги и проблемы производительности на сайте.</span>
                     </div>
                 </div>
+                <div class="footer_block">
+                    <div class="f_top_block" style="border-bottom: 1px solid #363636;"></div>
+                        <div class="f_bottom_block">
+                            <div class="f_column_block">
+                                <h1 class="h1-2-text" style="margin-bottom: 10px;">Обо мне</h1>
+                                <p>Главная</p>
+                                <p>Проекты</p>
+                                <p>Опыт</p>
+                                <p>Вопросы</p>
+                            </div>
+                            <div class="f_column_block">
+                                <h1 class="h1-2-text" style="margin-bottom: 10px;">Портфолио</h1>
+                                <p>Все проекты</p>
+                                <p>Статьи</p>
+                                <p>Публикации</p>
+                                <p>Лучшее</p>
+                            </div>
+                            <div class="f_column_block">
+                                <h1 class="h1-2-text" style="margin-bottom: 10px;">Связь</h1>
+                                <p>Форма контактной связи PTS</p>
+                                <p>GitHub</p>
+                                <p>RuTube</p>
+                                <p>ВКонтакте</p>
+                            </div>
+                            <div class="f_column_block">
+                                <h1 class="h1-2-text" style="margin-bottom: 10px;">Документы</h1>
+                                <p>Политика конфиденциальности</p>
+                                <p>Антиспам политика</p>
+                                <p>Авторские права</p>
+                                <p>Политика Cookie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
-    <footer>
-        <div class="footer_block">
-            <div class="f_top_block" style="border-bottom: 1px solid #363636;">
-
-            </div>
-            <div class="f_bottom_block">
-                <div class="f_column_block">
-                    <h1 class="h1-2-text" style="margin-bottom: 10px;">Обо мне</h1>
-                    <p>Главная</p>
-                    <p>Проекты</p>
-                    <p>Опыт</p>
-                    <p>Вопросы</p>
-                </div>
-                <div class="f_column_block">
-                    <h1 class="h1-2-text" style="margin-bottom: 10px;">Портфолио</h1>
-                    <p>Все проекты</p>
-                    <p>Статьи</p>
-                    <p>Публикации</p>
-                    <p>Лучшее</p>
-                </div>
-                <div class="f_column_block">
-                    <h1 class="h1-2-text" style="margin-bottom: 10px;">Связь</h1>
-                    <p>Форма контактной связи PTS</p>
-                    <p>GitHub</p>
-                    <p>RuTube</p>
-                    <p>ВКонтакте</p>
-                </div>
-                <div class="f_column_block">
-                    <h1 class="h1-2-text" style="margin-bottom: 10px;">Документы</h1>
-                    <p>Политика конфиденциальности</p>
-                    <p>Антиспам политика</p>
-                    <p>Авторские права</p>
-                    <p>Политика Cookie</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 <script src="js/home.js"></script>
 
 </body>

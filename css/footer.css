@@ -1,18 +1,21 @@
-footer {
+/* footer {
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
     margin: 20px;
     height: auto;
-}
+} */
 .footer_block {
-    width: 1280px;
+    width: 100%;
+    /* width: 1280px; */
     display: flex;
     flex-wrap: wrap;
     background: #161616;
     border: 1px solid #363636;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .f_top_block {
     width: 100%;

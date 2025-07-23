@@ -20,9 +20,10 @@
   text-decoration: none;
   list-style: none;
   scrollbar-color: #383838 #121212;
-  scrollbar-width:thin;
+  scrollbar-width:thin; /*none*/
   scrollbar-gutter: stable;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -82,7 +83,7 @@ header.hidden {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 10px 8px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 10px 8px rgb(0, 0, 0, 0.6);
   border-radius: 10px;
   align-items: center;
   background: #161616;
