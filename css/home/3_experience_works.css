@@ -8,6 +8,15 @@
     border: 1px solid #363636;
     justify-content: space-between;
 }
+.ew_text {
+    padding: 0 30px 40px 30px;
+}
+.ew_heading_block {
+    width: 100%;
+    height: 80px;
+    padding: 40px 30px 10px;
+    border-bottom: 1px solid #363636;
+}
 .ew_top_block {
     padding: 20px 30px;
     justify-content: space-between;
@@ -58,4 +67,9 @@
 }
 .ew-p {
     color: rgb(215, 215, 215);
+}
+@media (max-width: 1080px) {
+    .ew_text {
+        padding-bottom: 20px;
+    }
 }
